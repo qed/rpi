@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422 -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-pages --><style scope="iron-pages">iron-pages {
+  display:block;
+}
+
+iron-pages  > :not(.iron-selected) {
+  display:none !important;
+}</style><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for iron-meta-query --><!-- Shady DOM styles for iron-icon --><style scope="iron-icon-1">.iron-icon-1 {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;vertical-align:middle;fill:currentcolor;stroke:none;width:24px;height:24px;
+}</style><style scope="iron-icon-0">.iron-icon-0 {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;vertical-align:middle;fill:currentcolor;stroke:none;width:16px;height:16px;
+}</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for iron-collapse --><style scope="iron-collapse">iron-collapse {
+  display:block;transition-duration:300ms;overflow:auto;
+}
+
+iron-collapse.iron-collapse-closed {
+  display:none;
+}</style><!-- Shady DOM styles for iron-selector --><!-- Shady DOM styles for iron-a11y-announcer --><style scope="iron-a11y-announcer">iron-a11y-announcer {
+  display:inline-block;position:fixed;clip:rect(0px,0px,0px,0px);
+}</style><!-- Shady DOM styles for iron-overlay-backdrop --><!-- Shady DOM styles for iron-input --><!-- Shady DOM styles for iron-request --><!-- Shady DOM styles for iron-ajax --><!-- Shady DOM styles for iron-form --><!-- Shady DOM styles for iron-list --><!-- Shady DOM styles for iron-image --><!-- Shady DOM styles for paper-toast --><style scope="paper-toast-0">.paper-toast-0 {
+  display:block;position:fixed;background-color:#323232;color:#f1f1f1;min-height:48px;min-width:288px;padding:16px 24px;box-sizing:border-box;box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);border-radius:2px;left:0;bottom:0;margin:12px;font-size:14px;cursor:default;-webkit-transition:-webkit-transform 0.3s,opacity 0.3s;transition:transform 0.3s,opacity 0.3s;opacity:0;-webkit-transform:translateY(100px);transform:translateY(100px);;
+}
+
+.paper-toast-0.capsule {
+  border-radius:24px;
+}
+
+.paper-toast-0.fit-bottom {
+  width:100%;min-width:0;border-radius:0;margin:0;
+}
+
+.paper-toast-0.paper-toast-open {
+  opacity:1;-webkit-transform:translateY(0px);transform:translateY(0px);
+}</style><!-- Shady DOM styles for inf-dropdown --><style scope="inf-dropdown">inf-dropdown {
+  display:none;position:relative;z-index:1010;
+}
+
+inf-dropdown[opened] {
+  display:block;
+}
+
+inf-dropdown  > * {
+  position:absolute;
+}</style><!-- Shady DOM styles for inf-dropdown-menu --><!-- Shady DOM styles for inf-item --><style scope="inf-item">.layout.horizontal.inf-item,.layout.vertical.inf-item {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;
+}
+
+.layout.inline.inf-item {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;
+}
+
+.layout.horizontal.inf-item {
+  -ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;
+}
+
+.layout.vertical.inf-item {
+  -ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;
+}
+
+.layout.wrap.inf-item {
+  -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;
+}
+
+.layout.center.inf-item,.layout.center-center.inf-item {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.center-justified.inf-item,.layout.center-center.inf-item {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.flex.inf-item {
+  -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;
+}
+
+.flex-auto.inf-item {
+  -ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;
+}
+
+.flex-none.inf-item {
+  -ms-flex:none;-webkit-flex:none;flex:none;
+}
+
+.layout.start.inf-item {
+  -ms-flex-align:start;-webkit-align-items:flex-start;align-items:flex-start;
+}
+
+.layout.center.inf-item,.layout.center-center.inf-item {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.end.inf-item {
+  -ms-flex-align:end;-webkit-align-items:flex-end;align-items:flex-end;
+}
+
+.layout.baseline.inf-item {
+  -ms-flex-align:baseline;-webkit-align-items:baseline;align-items:baseline;
+}
+
+.layout.start-justified.inf-item {
+  -ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;
+}
+
+.layout.center-justified.inf-item,.layout.center-center.inf-item {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.layout.end-justified.inf-item {
+  -ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;
+}
+
+.layout.around-justified.inf-item {
+  -ms-flex-pack:distribute;-webkit-justify-content:space-around;justify-content:space-around;
+}
+
+.layout.justified.inf-item {
+  -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;
+}
+
+.self-start.inf-item {
+  -ms-align-self:flex-start;-webkit-align-self:flex-start;align-self:flex-start;
+}
+
+.self-center.inf-item {
+  -ms-align-self:center;-webkit-align-self:center;align-self:center;
+}
+
+.self-end.inf-item {
+  -ms-align-self:flex-end;-webkit-align-self:flex-end;align-self:flex-end;
+}
+
+.self-stretch.inf-item {
+  -ms-align-self:stretch;-webkit-align-self:stretch;align-self:stretch;
+}
+
+.self-baseline.inf-item {
+  -ms-align-self:baseline;-webkit-align-self:baseline;align-self:baseline;
+}
+
+.layout.start-aligned.inf-item {
+  -ms-flex-line-pack:start; -ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start;
+}
+
+.layout.end-aligned.inf-item {
+  -ms-flex-line-pack:end; -ms-align-content:flex-end;-webkit-align-content:flex-end;align-content:flex-end;
+}
+
+.layout.center-aligned.inf-item {
+  -ms-flex-line-pack:center; -ms-align-content:center;-webkit-align-content:center;align-content:center;
+}
+
+.layout.between-aligned.inf-item {
+  -ms-flex-line-pack:justify; -ms-align-content:space-between;-webkit-align-content:space-between;align-content:space-between;
+}
+
+.layout.around-aligned.inf-item {
+  -ms-flex-line-pack:distribute; -ms-align-content:space-around;-webkit-align-content:space-around;align-content:space-around;
+}
+
+inf-item {
+  cursor:pointer;display:block;
+}
+
+#label.inf-item {
+  text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+}</style><!-- Shady DOM styles for inf-multiselect --><style scope="inf-multiselect">.layout.horizontal.inf-multiselect,.layout.vertical.inf-multiselect {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;
+}
+
+.layout.inline.inf-multiselect {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;
+}
+
+.layout.horizontal.inf-multiselect {
+  -ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;
+}
+
+.layout.vertical.inf-multiselect {
+  -ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;
+}
+
+.layout.wrap.inf-multiselect {
+  -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;
+}
+
+.layout.center.inf-multiselect,.layout.center-center.inf-multiselect {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.center-justified.inf-multiselect,.layout.center-center.inf-multiselect {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.flex.inf-multiselect {
+  -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;
+}
+
+.flex-auto.inf-multiselect {
+  -ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;
+}
+
+.flex-none.inf-multiselect {
+  -ms-flex:none;-webkit-flex:none;flex:none;
+}
+
+.block.inf-multiselect {
+  display:block;
+}
+
+[hidden].inf-multiselect {
+  display:none !important;
+}
+
+.invisible.inf-multiselect {
+  visibility:hidden !important;
+}
+
+.relative.inf-multiselect {
+  position:relative;
+}
+
+.fit.inf-multiselect {
+  position:absolute;top:0;right:0;bottom:0;left:0;
+}
+
+body.fullbleed.inf-multiselect {
+  margin:0;height:100vh;
+}
+
+.scroll.inf-multiselect {
+  -webkit-overflow-scrolling:touch;overflow:auto;
+}
+
+.fixed-bottom.inf-multiselect,.fixed-left.inf-multiselect,.fixed-right.inf-multiselect,.fixed-top.inf-multiselect {
+  position:fixed;
+}
+
+.fixed-top.inf-multiselect {
+  top:0;left:0;right:0;
+}
+
+.fixed-right.inf-multiselect {
+  top:0;right:0;bottom:0;
+}
+
+.fixed-bottom.inf-multiselect {
+  right:0;bottom:0;left:0;
+}
+
+.fixed-left.inf-multiselect {
+  top:0;bottom:0;left:0;
+}
+
+.layout.start.inf-multiselect {
+  -ms-flex-align:start;-webkit-align-items:flex-start;align-items:flex-start;
+}
+
+.layout.center.inf-multiselect,.layout.center-center.inf-multiselect {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.end.inf-multiselect {
+  -ms-flex-align:end;-webkit-align-items:flex-end;align-items:flex-end;
+}
+
+.layout.baseline.inf-multiselect {
+  -ms-flex-align:baseline;-webkit-align-items:baseline;align-items:baseline;
+}
+
+.layout.start-justified.inf-multiselect {
+  -ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;
+}
+
+.layout.center-justified.inf-multiselect,.layout.center-center.inf-multiselect {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.layout.end-justified.inf-multiselect {
+  -ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;
+}
+
+.layout.around-justified.inf-multiselect {
+  -ms-flex-pack:distribute;-webkit-justify-content:space-around;justify-content:space-around;
+}
+
+.layout.justified.inf-multiselect {
+  -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;
+}
+
+.self-start.inf-multiselect {
+  -ms-align-self:flex-start;-webkit-align-self:flex-start;align-self:flex-start;
+}
+
+.self-center.inf-multiselect {
+  -ms-align-self:center;-webkit-align-self:center;align-self:center;
+}
+
+.self-end.inf-multiselect {
+  -ms-align-self:flex-end;-webkit-align-self:flex-end;align-self:flex-end;
+}
+
+.self-stretch.inf-multiselect {
+  -ms-align-self:stretch;-webkit-align-self:stretch;align-self:stretch;
+}
+
+.self-baseline.inf-multiselect {
+  -ms-align-self:baseline;-webkit-align-self:baseline;align-self:baseline;
+}
+
+.layout.start-aligned.inf-multiselect {
+  -ms-flex-line-pack:start; -ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start;
+}
+
+.layout.end-aligned.inf-multiselect {
+  -ms-flex-line-pack:end; -ms-align-content:flex-end;-webkit-align-content:flex-end;align-content:flex-end;
+}
+
+.layout.center-aligned.inf-multiselect {
+  -ms-flex-line-pack:center; -ms-align-content:center;-webkit-align-content:center;align-content:center;
+}
+
+.layout.between-aligned.inf-multiselect {
+  -ms-flex-line-pack:justify; -ms-align-content:space-between;-webkit-align-content:space-between;align-content:space-between;
+}
+
+.layout.around-aligned.inf-multiselect {
+  -ms-flex-line-pack:distribute; -ms-align-content:space-around;-webkit-align-content:space-around;align-content:space-around;
+}
+
+inf-multiselect {
+  position:relative;margin:0;padding:0;width:350px;display:inline-block;vertical-align:middle;font-size:12px;
+}
+
+inf-multiselect *.inf-multiselect {
+  box-sizing:border-box;
+}
+
+.selected-items.inf-multiselect {
+  border:1px solid #DDDDDD;border-radius:3px;background-color:#fff;color:inherit;cursor:text;margin:0;min-height:30px;overflow:hidden;padding:0 5px;width:100%;
+}
+
+.selected-items.inf-multiselect > div.inf-multiselect {
+  min-width:10px;
+}
+
+.selected-item.inf-multiselect span.inf-multiselect {
+  word-wrap:break-word;
+}
+
+.available-items.inf-multiselect {
+  border:1px solid #DDDDDD;border-bottom-left-radius:3px;border-bottom-right-radius:3px;border-top:0;background:#fff;box-shadow:0 4px 5px rgba(0,0,0,0.15);border-top:0;color:inherit;margin-top:0;max-height:240px;overflow-x:hidden;overflow-y:auto;padding:0;position:absolute;top:100%;width:100%;z-index:1010;
+}
+
+.available-items.inf-multiselect li.inf-multiselect {
+  margin:0;padding:5px 6px;
+}
+
+.available-items.inf-multiselect li.inf-multiselect:not(.iron-selected):hover {
+  background-color:#51A3DC;color:#fff;cursor:pointer;
+}
+
+.iron-selected.inf-multiselect {
+  color:#ccc;cursor:default;
+}
+
+input.inf-multiselect {
+  background-color:inherit;border:none;min-width:10px;
+}
+
+input.inf-multiselect:focus {
+  outline:none;
+}
+
+input[disabled].inf-multiselect {
+  background-color:inherit;
+}
+
+.chosen-item.inf-multiselect {
+  background-color:#f7f7f7;margin:3px 5px 3px 0;border:1px solid #ccc;border-radius:3px;box-shadow:0 0 2px white inset,0 1px 0 rgba(0,0,0,0.05);color:#5e5e5e;cursor:default;padding:2px 5px;
+}
+
+.chosen-item.inf-multiselect span.inf-multiselect {
+  overflow:hidden;text-overflow:ellipsis;
+}
+
+.chosen-item.inf-multiselect iron-icon.inf-multiselect {
+  flex-shrink:0;
+}
+
+.chosen-item.inf-multiselect .remove-icon.inf-multiselect {
+  cursor:pointer;color:#555;margin-left:2px;height:10px;width:10px;
+}</style><!-- Shady DOM styles for inf-color-palette --><!-- Shady DOM styles for inf-color-picker --><!-- Shady DOM styles for user-notifier --><style scope="user-notifier-0">.user-notifier-0 paper-toast.user-notifier {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;-ms-flex-align:center;-webkit-align-items:center;align-items:center;z-index:10010;
+}
+
+.user-notifier-0 paper-toast.user-notifier  a {
+  color:#ffffff;
+}
+
+.user-notifier-0 paper-toast.user-notifier iron-icon[icon=close].user-notifier {
+  cursor:pointer;margin-left:auto;
+}
+
+.user-notifier-0 paper-toast.success.user-notifier {
+  ;
+}
+
+.user-notifier-0 paper-toast.warning.user-notifier {
+  ;
+}
+
+.user-notifier-0 paper-toast.error.user-notifier {
+  ;
+}
+
+.user-notifier-0 #text.user-notifier {
+  margin-right:10px;
+}</style><!-- Shady DOM styles for single-select --><style scope="single-select">.layout.horizontal.single-select,.layout.vertical.single-select {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;
+}
+
+.layout.inline.single-select {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;
+}
+
+.layout.horizontal.single-select {
+  -ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;
+}
+
+.layout.vertical.single-select {
+  -ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;
+}
+
+.layout.wrap.single-select {
+  -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;
+}
+
+.layout.center.single-select,.layout.center-center.single-select {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.center-justified.single-select,.layout.center-center.single-select {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.flex.single-select {
+  -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;
+}
+
+.flex-auto.single-select {
+  -ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;
+}
+
+.flex-none.single-select {
+  -ms-flex:none;-webkit-flex:none;flex:none;
+}
+
+.layout.start.single-select {
+  -ms-flex-align:start;-webkit-align-items:flex-start;align-items:flex-start;
+}
+
+.layout.center.single-select,.layout.center-center.single-select {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+}
+
+.layout.end.single-select {
+  -ms-flex-align:end;-webkit-align-items:flex-end;align-items:flex-end;
+}
+
+.layout.baseline.single-select {
+  -ms-flex-align:baseline;-webkit-align-items:baseline;align-items:baseline;
+}
+
+.layout.start-justified.single-select {
+  -ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;
+}
+
+.layout.center-justified.single-select,.layout.center-center.single-select {
+  -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+}
+
+.layout.end-justified.single-select {
+  -ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;
+}
+
+.layout.around-justified.single-select {
+  -ms-flex-pack:distribute;-webkit-justify-content:space-around;justify-content:space-around;
+}
+
+.layout.justified.single-select {
+  -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;
+}
+
+.self-start.single-select {
+  -ms-align-self:flex-start;-webkit-align-self:flex-start;align-self:flex-start;
+}
+
+.self-center.single-select {
+  -ms-align-self:center;-webkit-align-self:center;align-self:center;
+}
+
+.self-end.single-select {
+  -ms-align-self:flex-end;-webkit-align-self:flex-end;align-self:flex-end;
+}
+
+.self-stretch.single-select {
+  -ms-align-self:stretch;-webkit-align-self:stretch;align-self:stretch;
+}
+
+.self-baseline.single-select {
+  -ms-align-self:baseline;-webkit-align-self:baseline;align-self:baseline;
+}
+
+.layout.start-aligned.single-select {
+  -ms-flex-line-pack:start; -ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start;
+}
+
+.layout.end-aligned.single-select {
+  -ms-flex-line-pack:end; -ms-align-content:flex-end;-webkit-align-content:flex-end;align-content:flex-end;
+}
+
+.layout.center-aligned.single-select {
+  -ms-flex-line-pack:center; -ms-align-content:center;-webkit-align-content:center;align-content:center;
+}
+
+.layout.between-aligned.single-select {
+  -ms-flex-line-pack:justify; -ms-align-content:space-between;-webkit-align-content:space-between;align-content:space-between;
+}
+
+.layout.around-aligned.single-select {
+  -ms-flex-line-pack:distribute; -ms-align-content:space-around;-webkit-align-content:space-around;align-content:space-around;
+}
+
+.block.single-select {
+  display:block;
+}
+
+[hidden].single-select {
+  display:none !important;
+}
+
+.invisible.single-select {
+  visibility:hidden !important;
+}
+
+.relative.single-select {
+  position:relative;
+}
+
+.fit.single-select {
+  position:absolute;top:0;right:0;bottom:0;left:0;
+}
+
+body.fullbleed.single-select {
+  margin:0;height:100vh;
+}
+
+.scroll.single-select {
+  -webkit-overflow-scrolling:touch;overflow:auto;
+}
+
+.fixed-bottom.single-select,.fixed-left.single-select,.fixed-right.single-select,.fixed-top.single-select {
+  position:fixed;
+}
+
+.fixed-top.single-select {
+  top:0;left:0;right:0;
+}
+
+.fixed-right.single-select {
+  top:0;right:0;bottom:0;
+}
+
+.fixed-bottom.single-select {
+  right:0;bottom:0;left:0;
+}
+
+.fixed-left.single-select {
+  top:0;bottom:0;left:0;
+}
+
+single-select {
+  position:relative;display:inline-block;font-size:12px;width:100%;
+}
+
+single-select *.single-select {
+  box-sizing:border-box;
+}
+
+#selected.single-select {
+  border:1px solid #DDDDDD;border-radius:3px;background-color:#fff;color:inherit;cursor:text;margin:0;min-height:30px;overflow:hidden;padding:0 5px;width:100%;
+}
+
+#items.single-select {
+  border:1px solid #ddd;border-bottom-left-radius:3px;border-bottom-right-radius:3px;border-top:0;background:#fff;box-shadow:0 4px 5px rgba(0,0,0,0.15);border-top:0;color:inherit;margin-top:0;max-height:240px;overflow-x:hidden;overflow-y:auto;padding:0;position:absolute;top:100%;width:100%;z-index:1010;
+}
+
+#items.single-select  > * {
+  margin:0;padding:5px 6px;
+}
+
+#items.single-select  > *:not(.iron-selected):hover {
+  background-color:#51A3DC;color:#fff;cursor:pointer;
+}
+
+#items.single-select  .iron-selected {
+  font-weight:bold;
+}
+
+input.single-select {
+  background-color:inherit;border:none;width:100%;
+}
+
+input.single-select:focus {
+  outline:none;
+}</style><!-- Shady DOM styles for header-bar --><!-- Shady DOM styles for simple-lozenge --><!-- Shady DOM styles for clipboard-field --><!-- Shady DOM styles for menu-button --><!-- Shady DOM styles for side-panel --><!-- Shady DOM styles for instructional-content --><style scope="instructional-content">instructional-content {
+  display:flex;flex-direction:column;padding:10px 0;color:#333450;margin-bottom:24px;
+}
+
+#ic-section-wrapper.instructional-content {
+  display:flex;flex-direction:column;text-align:center;
+}
+
+#ic-title.instructional-content {
+  font-weight:700;font-size:32px;margin:0 0 16px 0;
+}
+
+#ic-main.instructional-content {
+  max-width:600px;margin:0 auto;
+}
+
+#ic-description.instructional-content {
+  font-weight:400;font-size:16px;margin:0 0 16px 0;
+}
+
+a.instructional-content:hover {
+  text-decoration:none;
+}
+
+button.instructional-content {
+  background-color:#0040db;border-radius:8px;color:#fff;font-weight:500;font-size:13px;padding:6px 12px;height:32px;border:1px solid transparent;text-decoration:none;-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:inline-block;line-height:normal;position:relative;-webkit-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out;
+}
+
+button.instructional-content:hover {
+  background:#0837a4;color:white;text-decoration:none;
+}
+
+a.instructional-content:nth-child(2) > button.instructional-content {
+  background-color:transparent;color:#0040db;border-color:#cdcdd1;margin-left:16px;
+}
+
+a.instructional-content:nth-child(2) > button.instructional-content:hover {
+  border-color:#0040db;
+}
+
+#ic-dismiss-box.instructional-content {
+  cursor:pointer;color:#0040db;font-size:13px;margin-left:16px;display:inline-block;margin-top:16px;
+}
+
+#ic-dismiss-box.instructional-content:hover {
+  text-decoration:underline;
+}</style><!-- Shady DOM styles for tag-selector --><!-- Shady DOM styles for onboarding-dashboard --><style scope="onboarding-dashboard">onboarding-dashboard {
+  display:flex;flex-direction:column;background-color:#f6f6f6;
+}
+
+onboarding-dashboard  journey-card {
+  margin-top:5px;margin-right:10px;margin-left:10px;margin-bottom:0;
+}
+
+#heading.onboarding-dashboard {
+  text-align:center;
+}
+
+#heading.onboarding-dashboard > h1.onboarding-dashboard {
+  margin-top:0px;margin-bottom:0px;
+}
+
+#task-container.onboarding-dashboard {
+  display:flex;flex-direction:row;justify-content:center;margin:10px;
+}
+
+#footer.onboarding-dashboard {
+  text-align:center;margin-top:10px;
+}
+
+#skip-link.onboarding-dashboard {
+  color:inherit;text-decoration:underline;cursor:pointer;
+}
+
+#skip-this.onboarding-dashboard {
+  text-align:right;font-size-adjust:.6;
+}</style><!-- Shady DOM styles for journey-card --><!-- Shady DOM styles for report-percentage-bar --><style scope="report-percentage-bar-0">.report-percentage-bar-0 .button.report-percentage-bar,.report-percentage-bar-0 button.report-percentage-bar {
+  cursor:pointer;display:inline-block;text-decoration:none;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-appearance:none;box-sizing:border-box;border-style:solid;background-image:none;letter-spacing:normal;overflow:visible;background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,.35);color:rgba(0,0,0,.75);
+}
+
+.report-percentage-bar-0 .button.report-percentage-bar:hover,.report-percentage-bar-0 button.report-percentage-bar:hover {
+  outline:0;background-color:rgba(0,0,0,.05);
+}
+
+.report-percentage-bar-0 .button.report-percentage-bar:active,.report-percentage-bar-0 .button[pressed].report-percentage-bar,.report-percentage-bar-0 button.report-percentage-bar:active,.report-percentage-bar-0 button[pressed].report-percentage-bar {
+  box-shadow:none;outline:0;
+}
+
+.report-percentage-bar-0 .button.report-percentage-bar:focus,.report-percentage-bar-0 .button[focused].report-percentage-bar,.report-percentage-bar-0 button.report-percentage-bar:focus,.report-percentage-bar-0 button[focused].report-percentage-bar {
+  outline:none;
+}
+
+.report-percentage-bar-0 .button[disabled].report-percentage-bar,.report-percentage-bar-0 button[disabled].report-percentage-bar,.report-percentage-bar-0 .button.disabled.report-percentage-bar,.report-percentage-bar-0 button.disabled.report-percentage-bar {
+  cursor:not-allowed;pointer-events:none;opacity:.50;background-color:rgba(0,0,0,0);
+}
+
+.report-percentage-bar-0 a.button.report-percentage-bar,.report-percentage-bar-0 a.button.report-percentage-bar:hover {
+  text-decoration:none;
+}
+
+.report-percentage-bar-0 .button.small.report-percentage-bar,.report-percentage-bar-0 button.small.report-percentage-bar {
+  font-size:11px;border-radius:10px;border-width:1px;height:20px;line-height:17px;padding:0 14px;font-weight:;-webkit-font-smoothing:auto;
+}
+
+.report-percentage-bar-0 .button.report-percentage-bar,.report-percentage-bar-0 button.report-percentage-bar {
+  border-radius:15px;border-width:1px;font-size:14px;height:30px;padding:0 19px;
+}
+
+.report-percentage-bar-0 .button.large.report-percentage-bar,.report-percentage-bar-0 button.large.report-percentage-bar {
+  font-size:16px;border-radius:24px;border-width:2px;height:48px;line-height:43px;padding:0 38px;
+}
+
+.report-percentage-bar-0 .button.primary.report-percentage-bar,.report-percentage-bar-0 button.primary.report-percentage-bar {
+  background-color:#51a3dc;border-color:#51a3dc;color:#ffffff;
+}
+
+.report-percentage-bar-0 .button.primary.report-percentage-bar:hover,.report-percentage-bar-0 button.primary.report-percentage-bar:hover {
+  background-color:#4992c6;border-color:#4992c6;
+}
+
+.report-percentage-bar-0 .button.dark.report-percentage-bar {
+  border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.75);
+}
+
+.report-percentage-bar-0 .button.dark.report-percentage-bar:hover {
+  background-color:rgba(255,255,255,.10);
+}
+
+.report-percentage-bar-0 iron-icon.button.report-percentage-bar,.report-percentage-bar-0 .icon.button.report-percentage-bar {
+  width:30px;padding:5px;
+}
+
+.report-percentage-bar-0 iron-icon.button.small.report-percentage-bar,.report-percentage-bar-0 .icon.button.small.report-percentage-bar {
+  width:20px;padding:3px;
+}
+
+.report-percentage-bar-0 iron-icon.button.large.report-percentage-bar,.report-percentage-bar-0 .icon.button.large.report-percentage-bar {
+  width:48px;padding:10px;
+}
+
+.report-percentage-bar-0 .bar.report-percentage-bar {
+  height:8px;width:100%;border-radius:4px;background-color:#DFE0E3;
+}
+
+.report-percentage-bar-0 .number.report-percentage-bar {
+  color:#58a1d8;font-size:18px;text-decoration:underline;
+}
+
+.report-percentage-bar-0 .number-row.report-percentage-bar {
+  width:100%;margin-top:5px;display:flex;justify-content:space-between;
+}
+
+.report-percentage-bar-0 .progress.report-percentage-bar {
+  height:8px;border-radius:4px 0 0 4px;background-color:#58A1D8;
+}
+
+.report-percentage-bar-0 .smaller-font.report-percentage-bar {
+  font-size:12px;margin-right:1rem;
+}</style><!-- Shady DOM styles for batch-report-status --><!-- Shady DOM styles for batch-report-status-tooltip --><style scope="batch-report-status-tooltip">#statusTooltipDropdown.batch-report-status-tooltip {
+  background-color:#fff;border-radius:6px;box-shadow:0 3px 7px rgba(0,0,0,0.3);padding:15px;background-color:#ffffff;border-radius:6px;box-shadow:0 3px 7px rgba(0,0,0,0.3);position:absolute;
+}
+
+.tooltip.batch-report-status-tooltip {
+  color:#51a3dc;cursor:pointer;margin-left:5px;height:14px;width:14px;
+}</style><!-- Shady DOM styles for batch-report-stop-button --><style scope="batch-report-stop-button">.btn-secondary.batch-report-stop-button {
+  width:89px;border:1px solid #4086BB;border-radius:4px;background:transparent;font-size:14px;color:#4086BB;
+}
+
+.flright.batch-report-stop-button {
+  float:right;
+}
+
+.mr-25.batch-report-stop-button {
+  margin-right:25px;
+}</style><!-- Shady DOM styles for batch-report --><style scope="batch-report">.batch-report-apple-privacy-modal-container.batch-report {
+  position:fixed;top:0;right:0;bottom:0;left:0;padding:20px;z-index:1000;background-color:rgba(0,0,0,0.25);display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+
+.batch-report-apple-privacy-modal-body.batch-report {
+  width:320px;height:210px;border-radius:12px;padding:8px;box-shadow:0 8px 10px -5px rgba(0,0,0,0.2),0 6px 30px 5px rgba(0,0,0,0.12),0 16px 24px 2px rgba(0,0,0,0.14);background-color:#ffffff;margin:20px auto;
+}
+
+.batch-report-apple-privacy-modal-body-header.batch-report {
+  height:40px;margin:0;border:0;padding:0;display:flex;align-items:center;
+}
+
+.batch-report-apple-privacy-modal-body-content.batch-report {
+  display:flex;flex-direction:column;align-items:center;padding:0px 8px 0px 8px;
+}
+
+.batch-report-apple-privacy-modal-body-footer.batch-report {
+  padding:12px 0;
+}
+
+.batch-report-apple-privacy-modal-body-title.batch-report {
+  text-align:left;margin:0;line-height:normal;letter-spacing:normal;
+}
+
+.batch-report-apple-privacy-modal-body-description.batch-report {
+  line-height:1.5;letter-spacing:normal;text-align:left;margin:0;padding:12px 0;
+}
+
+.batch-report-apple-privacy-modal-body-description.batch-report p.batch-report {
+  margin:0;
+}
+
+.batch-report-apple-privacy-modal-body-close.batch-report {
+  width:14px;height:14px;margin:0;padding:13px;cursor:pointer;
+}
+
+@media screen and (max-width:992px) {
+.batch-report-apple-privacy-modal-body.batch-report {
+  width:100%;
+}
+
+}
+
+@media screen and (max-width:600px) {
+.batch-report-apple-privacy-modal-body.batch-report {
+  left:0;
+}
+
+}
+
+.btn-secondary.batch-report {
+  width:89px;border:1px solid #4086BB;border-radius:4px;background:transparent;font-size:14px;color:#4086BB;
+}
+
+.container.batch-report {
+  display:flex;
+}
+
+.flright.batch-report {
+  float:right;
+}
+
+.fixed.batch-report {
+  width:33%;
+}
+
+.flex-item.batch-report {
+  flex-grow:1;
+}
+
+.flex-item.batch-report {
+  float:left;width:66%;
+}
+
+.header-row.batch-report {
+  display:flex;justify-content:space-between;
+}
+
+.inline-block.batch-report {
+  display:inline-block;
+}
+
+.label.batch-report {
+  font-weight:400;color:#717685;font-size:.75rem;margin-bottom:5px;
+}
+
+.label-group-body.batch-report {
+  color:#353848;font-size:14px;font-weight:normal;max-width:95%;
+}
+
+.link.batch-report {
+  cursor:pointer;
+}
+
+.mb-15.batch-report {
+  margin-bottom:15px;
+}
+
+.mb-25.batch-report {
+  margin-bottom:25px;
+}
+
+.recipient-criteria-section.batch-report {
+  margin-bottom:11px;
+}
+
+.recipient-criteria-section.batch-report .empty-state.batch-report {
+  margin-bottom:4px;
+}
+
+.recipient-criteria.batch-report {
+  list-style-type:none;margin:0;padding:0;
+}
+
+.recipient-criteria.batch-report li.batch-report {
+  font-size:14px;display:inline-block;margin:0 5px 5px 0;
+}
+
+.recipient-icon.batch-report {
+  color:#4086BB;height:14px;width:14px;
+}
+
+.number.batch-report {
+  font-size:18px;
+}
+
+.number-row.batch-report {
+  width:100%;margin-top:5px;display:flex;justify-content:space-between;
+}
+
+.smaller-font.batch-report {
+  font-size:12px;
+}
+
+.text-button.batch-report {
+  align-self:flex-end;color:#0040db;font-weight:500;font-size:14px;padding:6px 12px;height:32px !important;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:border .2s ease-in-out;-o-transition:border .2s ease-in-out;transition:border .2s ease-in-out;line-height:16px;background-color:transparent;border-color:transparent;
+}
+
+.text-button.batch-report:hover,.text-button.batch-report:focus {
+  background-color:rgba(0,0,0,.02);
+}
+
+.text-button.batch-report:active {
+  background-color:rgba(0,0,0,.02);color:#0f306e;
+}</style><!-- Shady DOM styles for ab-test-report-card --><style scope="ab-test-report-card">.action-elements.ab-test-report-card {
+  display:inline-block;
+}
+
+.action-element-body.ab-test-report-card {
+  color:#4086BB;font-size:14px;
+}
+
+.action-element-title.ab-test-report-card {
+  font-size:12px;
+}
+
+.body.ab-test-report-card {
+  position:relative;width:100%;border-radius:5px;background-color:#FFFFFF;box-shadow:0 1px 3px 0 rgba(65,64,66,0.3);
+}
+
+.body-link.ab-test-report-card {
+  text-decoration:underline;
+}
+
+.body-winner.ab-test-report-card {
+  position:relative;
+}
+
+.bottom-half.ab-test-report-card {
+  margin-top:20px;padding-bottom:24px;
+}
+
+.btn-secondary.ab-test-report-card {
+  height:32px;width:101px;border:1px solid #4086BB;border-radius:4px;background:transparent;font-size:14px;color:#4086BB;
+}
+
+.btn-secondary.ab-test-report-card:hover {
+  background-color:#4086BB;color:white;cursor:pointer;
+}
+
+.corner-ribbon.ab-test-report-card {
+  width:50px;position:absolute;top:13px;right:3px;left:auto;transform:rotate(45deg);-webkit-transform:rotate(45deg);text-align:center;line-height:30px;letter-spacing:1px;color:#f0f0f0;font-size:13px;
+}
+
+.corner-ribbon.ab-test-report-card:before {
+  content:'';width:50px;top:0;right:-30px;position:absolute;border-right:30px solid transparent;border-left:30px solid transparent;border-bottom:30px solid #FEBB65;z-index:-1;box-shadow:0 3px 4px -3px rgba(0,0,0,.3);
+}
+
+.flright.ab-test-report-card {
+  float:right;
+}
+
+.from.ab-test-report-card {
+  font-size:14px;margin-bottom:20px;
+}
+
+.header-24.ab-test-report-card {
+  font-size:24px;padding-top:20px;
+}
+
+.info-container.ab-test-report-card {
+  margin:0 24px;
+}
+
+.mleft-16.ab-test-report-card {
+  margin-left:16px;
+}
+
+.percent-bar-element.ab-test-report-card {
+  width:49%;
+}
+
+.percent-bar-row.ab-test-report-card {
+  display:flex;justify-content:space-between;
+}
+
+.sent-winner.ab-test-report-card {
+  position:absolute;top:-10px;left:20%;text-align:center;z-index:1;
+}
+
+.number.ab-test-report-card {
+  font-size:18px;
+}
+
+.number-row.ab-test-report-card {
+  width:100%;margin-top:5px;display:flex;justify-content:space-between;
+}
+
+.smaller-font.ab-test-report-card {
+  font-size:12px;
+}</style><!-- Shady DOM styles for ab-test-report-page --><style scope="ab-test-report-page">.body.ab-test-report-page {
+  width:100%;
+}
+
+.card.ab-test-report-page {
+  margin-bottom:13px;
+}
+
+.container.ab-test-report-page {
+  width:100%;
+}
+
+.disabled.variant-number.ab-test-report-page {
+  opacity:0.5;text-decoration:none;pointer-events:none;
+}
+
+.divider.ab-test-report-page {
+  border-top:2px solid #ccc;
+}
+
+.fixed.ab-test-report-page {
+  float:left;width:30%;padding-right:20px;
+}
+
+.flex-item.ab-test-report-page {
+  float:left;width:67%;
+}
+
+.label.ab-test-report-page {
+  font-weight:400;color:#787b89;font-size:.75rem;margin-bottom:5px;
+}
+
+.label-group.ab-test-report-page {
+  margin-bottom:15px;
+}
+
+.label-group-body.ab-test-report-page {
+  font-size:16px;font-weight:400;
+}
+
+.variant-title.ab-test-report-page {
+  display:inline-block;width:70%;
+}
+
+.variant-number.ab-test-report-page {
+  display:inline-block;float:right;color:#3372AD;text-decoration:underline;
+}
+
+.recipient-criteria-section.ab-test-report-page {
+  margin-bottom:11px;
+}
+
+.recipient-criteria-section.ab-test-report-page .empty-state.ab-test-report-page {
+  margin-bottom:4px;
+}
+
+.recipient-criteria.ab-test-report-page {
+  list-style-type:none;margin:0;padding:0;
+}
+
+.recipient-criteria.ab-test-report-page li.ab-test-report-page {
+  font-size:14px;display:inline-block;margin:0 5px 5px 0;
+}
+
+.recipient-icon.ab-test-report-page {
+  color:#4086BB;height:14px;width:14px;
+}
+
+.btn-secondary.ab-test-report-page {
+  width:89px;border:1px solid #4086BB;border-radius:4px;background:transparent;font-size:14px;color:#4086BB;
+}
+
+.flright.ab-test-report-page {
+  float:right;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <title>View Email Batch</title>
+
+    <link href="./feb 2 news 2025_files/style.css" media="all" rel="stylesheet" type="text/css"><script type="text/javascript" async="" src="./feb 2 news 2025_files/pendo.js.download"></script><script async="" src="./feb 2 news 2025_files/fs.js.download"></script><script type="text/javascript">(function() {
+                            var styleArray = ["/resources/external/boilerplate/css/style.css"];
+                            if (window.Infusion) {
+                                Infusion.stylesLoaded(styleArray);
+                            } else if (window.InfusionStyles) {
+                                window.InfusionStyles.concat(styleArray);
+                            } else {
+                                window.InfusionStyles = styleArray;
+                            }
+                        })();</script><link href="./feb 2 news 2025_files/global.css" media="all" rel="stylesheet" type="text/css"><script type="text/javascript">(function() {
+                            var styleArray = ["/resources/stylesheets/global.css"];
+                            if (window.Infusion) {
+                                Infusion.stylesLoaded(styleArray);
+                            } else if (window.InfusionStyles) {
+                                window.InfusionStyles.concat(styleArray);
+                            } else {
+                                window.InfusionStyles = styleArray;
+                            }
+                        })();</script><link rel="shortcut icon" href="https://bs413.infusionsoft.com/slices/style/keap-favicon.ico" type="image/x-icon">
+
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-store">
+<link rel="stylesheet" href="./feb 2 news 2025_files/sink_css.jsp" type="text/css" media="screen">
+<script type="text/javascript">(function() {
+        var styleArray = [];
+        
+            styleArray.push('/css/fonts/entypo.css');
+        
+            styleArray.push('/css/misc.css');
+        
+            styleArray.push('/css/sprites.css');
+        
+            styleArray.push('/css/pageheaders.css');
+        
+            styleArray.push('/css/form.css');
+        
+            styleArray.push('/css/link.css');
+        
+            styleArray.push('/css/tab.css');
+        
+            styleArray.push('/css/table.css');
+        
+            styleArray.push('/css/searchbox.css');
+        
+            styleArray.push('/css/calendar.css');
+        
+            styleArray.push('/css/grey-bg.css');
+        
+            styleArray.push('/js/jquery/plugins/tooltip/skins/default/css/jquery.tooltip.css');
+        
+            styleArray.push('/css/template.css');
+        
+            styleArray.push('/resources/component/content/notice/notice.css');
+        
+            styleArray.push('/css/search.css');
+        
+            styleArray.push('/Reports/css/report.css');
+        
+            styleArray.push('/resources/core/custom-form-controls/multiselect/skins/default/default.css');
+        
+            styleArray.push('/resources/core/custom-form-controls/multiselect/skins/forest/forest.css');
+        
+            styleArray.push('/css/bootstring.css');
+        
+            styleArray.push('/css/split-menu-button.css');
+        
+            styleArray.push('/resources/component/scoring/scoring.css');
+        
+            styleArray.push('/resources/external/qtip2/css/jquery.qtip.min.css');
+        
+            styleArray.push('/resources/external/qtip2/css/infusion-custom-qtip.css');
+        
+            styleArray.push('/resources/component/topnav/topnav.css');
+        
+            styleArray.push('/resources/util/css/lightbox.css');
+        
+            styleArray.push('/resources/external/bower/pikaday/css/pikaday.css');
+        
+            styleArray.push('/css/pikaday.css');
+        
+            styleArray.push('/resources/component/email/newemail/newemail.css');
+        
+            styleArray.push('/resources/component/content/mininotification/mininotification.css');
+        
+            styleArray.push('/resources/component/selectenhanced/selectenhanced.css');
+        
+            styleArray.push('/resources/merge/merge.css');
+        
+            styleArray.push('/resources/usage/thresholdPopUp.css');
+        
+        if (window.Infusion) {
+            Infusion.stylesLoaded(styleArray);
+        } else if (window.InfusionStyles) {
+            window.InfusionStyles = window.InfusionStyles.concat(styleArray);
+        } else {
+            window.InfusionStyles = styleArray;
+        }
+
+    })();</script><script>
+        var webComponentsSupported = ('registerElement' in document &&
+                'import' in document.createElement('link') &&
+                'content' in document.createElement('template'));
+
+        if (!webComponentsSupported) {
+            var wcPoly = document.createElement('script');
+            wcPoly.src = '/resources/external/bower/webcomponentsjs/webcomponents-lite.min.js';
+            document.head.appendChild(wcPoly);
+        } else {
+            window.addEventListener('DOMContentLoaded', function() {
+                document.dispatchEvent(new CustomEvent('WebComponentsReady', {bubbles: true}));
+            });
+        }
+    </script><script src="./feb 2 news 2025_files/webcomponents-lite.min.js.download"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="./feb 2 news 2025_files/creditView_msg.jsp" id="lazy-loaded-1772567477302"></script><style type="text/css" media="print">.dropShadow{visibility:hidden;}</style><link type="text/css" rel="stylesheet" href="./feb 2 news 2025_files/guide.css" id="_pendo-default-css_"><link type="text/css" rel="stylesheet" href="./feb 2 news 2025_files/guide.-323232.1569901761785.css" id="_pendo-css_"><link type="text/css" rel="stylesheet" href="./feb 2 news 2025_files/BUeDYyqj4ertT48NCMKprKeS4KM.guide.css"></head><body class="inf-body page_reportViewEmailBatchReport19422"><user-notifier class="x-scope user-notifier-0"><paper-toast id="toast" duration="15000" class="style-scope user-notifier x-scope paper-toast-0" aria-hidden="true" style="outline: none; display: none;"> <span id="label" class="style-scope paper-toast"></span><span id="text" class="style-scope user-notifier"></span><iron-icon icon="close" class="style-scope user-notifier x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" class="style-scope iron-icon"></path></g></svg></iron-icon></paper-toast></user-notifier>
+
+    <link rel="import" href="https://bs413.infusionsoft.com/resources/polymercomponents/dist/polymer.min.html?b=1.70.0.906323-hf-202602241301"><style>/* IE 10 support for HTML5 hidden attr */ [hidden]{display:none !important;}</style><style></style><style></style><style></style><link rel="import" href="https://bs413.infusionsoft.com/resources/polymercomponents/dist/elements-bundle.min.html?b=1.70.0.906323-hf-202602241301"><script type="text/javascript" src="./feb 2 news 2025_files/sink_jq.jsp"></script>
+<script type="text/javascript" src="./feb 2 news 2025_files/sink_js.jsp"></script>
+<script type="text/javascript">
+        function loadPendoOnWindowLoad() {
+            window.pendo_options = {
+                apiKey: "e2e35634-a775-4c3a-705d-efbd6bcd60e4",
+
+                usePendoAgentAPI: false,
+
+                visitor: {
+                    id: "1459425",
+                    email: "info@rpinvestments.ca",
+                    firstName: "Monika",
+                    lastName: "Jazyk",
+                    userType: "admin",
+                    isPartner: "false",
+                    authenticationType: "UsernamePassword",
+                    environment: "Production",
+                    source: "core"
+                },
+
+                account: {
+                    id: "bs413",
+                    block: "mn148core1.web",
+                    appVersion: "1.70.0.906323",
+                    environment: "Production",
+                    source: "core"
+                }
+            };
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = '//cdn.pendo.io/agent/static/e2e35634-a775-4c3a-705d-efbd6bcd60e4/pendo.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+
+            if (false) {
+                var style = document.createElement('style');
+                style.textContent = '._pendo-launcher-badge_ { display: none; }';
+                firstScript.parentNode.insertBefore(style, firstScript);
+            }
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener("load", loadPendoOnWindowLoad, false);
+
+        } else if (window.attachEvent) {
+            window.attachEvent("onload", loadPendoOnWindowLoad);
+
+        } else {
+            window.onload = loadPendoOnWindowLoad;
+        }
+    </script>
+<script type="text/javascript">
+            var sessionTimeoutLength = 7200;
+        </script>
+
+        <script type="text/javascript">Infusion.on("Session").exec(function() {
+                
+            jQuery(window).on("load",function() {
+                Infusion.Session.initialize();
+            });
+        
+            });</script><script type="text/javascript">jQuery(window).on("load",function() {
+            // Name window as mainApp (useful for distinguishing between popup and non-popup)
+            if (!window.name) {
+            window.name = "mainApp";
+            }
+            });
+
+            Infusion.depends(["Msg"], function () {
+            
+
+Infusion.Msg.registerMsg('help.support.case.title', 'Submit a Support Case');
+
+Infusion.Msg.registerMsg('help.support.case.prerelease.bug.title', 'Submit a Pre-Release Bug');
+
+Infusion.Msg.registerMsg('quickSearch.unavailable', 'Search is temporarily unavailable, please try again.');
+
+Infusion.Msg.registerMsg('quickSearch.noResults', 'No results');
+
+Infusion.Msg.registerMsg('quickSearch.typeMore', 'Type 2 or more characters for search results');
+
+Infusion.Msg.registerMsg('quickSearch.showMoreResults', 'Show more results');
+
+Infusion.Msg.registerMsg('application.no.name', 'No name');
+            });</script><script src="./feb 2 news 2025_files/csrfUtils.js.download" type="text/javascript"></script><script src="./feb 2 news 2025_files/fullstoryInfusion.js.download" type="text/javascript"></script><script type="application/javascript">
+                FS.identify('1459425', {
+                    appName: 'bs413',
+                    userId: '1',
+                    email: 'info@rpinvestments.ca',
+                    username: 'info@rpinvestments.ca',
+                    displayName: 'Monika Jazyk'
+                });
+            </script>
+        
+
+
+    <div id="activationLightBox"></div>
+    <div id="helpMenuContainer"></div>
+
+    <a id="topOfPage"></a>
+
+    <div id="inf-body-content" class="inf-body">
+        <center>
+            <input type="hidden" id="nav-toggle" value="false">
+                <input type="hidden" id="userId-value" value="1">
+                <input type="hidden" id="contact-toggle" value="false">
+            <div id="header">
+                <div id="topnav-container">
+            <nav id="topnav">
+                <div id="supernav_icon_tray" class="">
+                    <div id="supernav_logo" class="supernav-logo topnav-menu context-menu">
+                        <span class="supernav-hamburger-menu" title="Please click to open the menu">
+                            <img class="supernav-hamburger-icon" src="./feb 2 news 2025_files/ic-hamburger-menu.svg" height="24" width="24">
+                            <img class="supernav-close-icon" src="./feb 2 news 2025_files/close.svg" height="24" width="24">
+                        </span>
+
+                        <div id="hover-nav-container" class="topnav-menu-content">
+                            <div class="hover-nav">
+    <section>
+    <div class="hover-nav-module hidden-false" data-system-id="nav.mynav">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="nav.home.dashboard" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.mynav&amp;navModule=nav.home.dashboard"><span>My Nav</span></a></h5>
+                    </div>
+
+                    <div id="mynav-empty" class="hidden-true">
+                            <div class="start-page">
+                                <svg class="start-page-icon"><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-home-default"></use></svg>
+                                <span class="start-page-help">Start Page</span>
+                            </div>
+                            <div>
+                                <div class="global-sprite drag-arrow"></div>
+                                <a onclick="Infusion.on(&#39;Component.Mynav&#39;).readyExec(&#39;customize&#39;);return false;" href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#">Customize Now</a></div>
+                        </div>
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="nav.home.dashboard" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.mynav&amp;navModule=nav.home.dashboard"><span>Dashboard</span></a></li></ul>
+                                <div class="classic-toggle-section">
+                                        <div class="switch-toggle-section">
+                                            <a class="switch-toggle-link">
+                                                <div class="switch-toggle-image">
+                                                    <img src="./feb 2 news 2025_files/toggleOff.svg">
+                                                </div>
+                                                <div class="switch-toggle-txt">Try new features</div>
+                                            </a>
+                                    </div>
+                                    <div class="new-feature-menu" style="display: none">
+
+                                        <div class="side-nav-toggle-section spacing">
+                                                <div class="side-nav-toggle-image">
+                                                    <label class="toggle-switch max-toggle no-label"><div class="toggle new-navigation"><span class="slider off"></span></div></label>
+                                                </div>
+                                                <div class="side-nav-toggle-text new-navigation">
+                                                    Try Keap Ultimate <span class="beta-chip">Beta</span>
+                                                    <p>Toggle over to Keap Ultimate</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <ul class="hover-nav-module-content-footer ">
+                            <li class="first controls nav-edit-link">
+                                        <a onclick="Infusion.on(&#39;Component.Mynav&#39;).readyExec(&#39;customize&#39;);return false;" href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#">Edit my nav</a></li>
+                                    <li class="first controls nav-done-link">
+                                        <input type="button" class="inf-button primary" value="Done" onclick="Infusion.Component.Mynav.closeCustomize();">
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-false" data-system-id="nav.crm">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="contact" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=contact"><span>CRM</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="contact" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=contact"><span>Contacts</span></a></li><li class=""><a data-module-id="company" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=company"><span>Companies</span></a></li><li class=""><a data-module-id="opportunity" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=opportunity"><span>Opportunities</span></a></li><li class=""><a data-module-id="affiliate" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=affiliate"><span>Referral Partners</span></a></li><li class=""><a data-module-id="visitors" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=visitors"><span>Visitors</span></a></li><li class=""><a data-module-id="zapier" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.crm&amp;navModule=zapier"><span>Zapier Integrations</span></a></li></ul>
+                                <ul class="hover-nav-module-content-footer ">
+                            <li class="first"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.crm.reports"><span>Reports</span></a></li>
+                                                <li class="second"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.crm.settings"><span>Settings</span></a></li>
+                                                </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-false" data-system-id="nav.marketing">
+                    <div style="position: relative;">
+                        <h5 class="nav-header active">
+                            <a data-module-id="funnel" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=funnel"><span>Marketing</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="funnel" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=funnel"><span>Automation Builder</span></a></li><li class=""><a data-module-id="broadcast" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=broadcast"><span>Email &amp; Broadcasts</span></a></li><li class=""><a data-module-id="leadGeneration" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=leadGeneration"><span>Lead Generation</span></a></li><li class=""><a data-module-id="template" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=template"><span>Templates</span></a></li><li class=""><a data-module-id="liquid" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=liquid"><span>Dynamic Content</span></a></li><li class=""><a data-module-id="marketingsite" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=marketingsite"><span>Landing Pages</span></a></li><li class=""><a data-module-id="legacy" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy"><span>Legacy</span></a></li></ul>
+                                <ul class="hover-nav-module-content-footer ">
+                            <li class="first"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.marketing.reports"><span>Reports</span></a></li>
+                                                <li class="second"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.marketing.settings"><span>Settings</span></a></li>
+                                                </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-false" data-system-id="nav.accounting">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="configure" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=configure"><span>E-Commerce</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="configure" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=configure"><span>E-Commerce Setup</span></a></li><li class=""><a data-module-id="order" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=order"><span>Orders</span></a></li><li class=""><a data-module-id="product" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=product"><span>Products</span></a></li><li class=""><a data-module-id="payments" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=payments"><span>Payment Setup</span></a></li><li class=""><a data-module-id="action" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=action"><span>Actions</span></a></li><li class=""><a data-module-id="promotions" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=promotions"><span>Promotions</span></a></li><li class=""><a data-module-id="legacy-ECOMM" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.accounting&amp;navModule=legacy-ECOMM"><span>Legacy</span></a></li></ul>
+                                <ul class="hover-nav-module-content-footer ">
+                            <li class="first"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.accounting.reports"><span>Reports</span></a></li>
+                                                <li class="second"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.accounting.settings"><span>Settings</span></a></li>
+                                                </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-false" data-system-id="nav.admin">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="nav.admin.brandingcenter" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.admin&amp;navModule=nav.admin.brandingcenter"><span>Admin</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="nav.admin.brandingcenter" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.admin&amp;navModule=nav.admin.brandingcenter"><span>Legacy Branding Center</span></a></li><li class=""><a data-module-id="nav.admin.my-account" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.admin&amp;navModule=nav.admin.my-account"><span>Billing &amp; Account Info</span></a></li><li class=""><a data-module-id="user-profile" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.admin&amp;navModule=user-profile"><span>Users</span></a></li><li class=""><a data-module-id="nav.admin.import" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.admin&amp;navModule=nav.admin.import"><span>Import Data</span></a></li></ul>
+                                <ul class="hover-nav-module-content-footer ">
+                            <li class="first"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.admin.reports"><span>Reports</span></a></li>
+                                                <li class="second"><a href="https://bs413.infusionsoft.com/app/nav/link?navModule=nav.admin.settings"><span>Settings</span></a></li>
+                                                </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-true" data-system-id="nav.home">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="nav.home.training" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.training"><span>Tools</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body">
+                                    <li class=""><a data-module-id="nav.home.training" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.training"><span>Basic Training</span></a></li><li class=""><a data-module-id="nav.home.setup" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.setup"><span>Initial Setup</span></a></li><li class=""><a data-module-id="nav.home.dashboard" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.dashboard"><span>Dashboard</span></a></li><li class=""><a data-module-id="nav.home.myDay" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.myDay"><span>My Day</span></a></li><li class=""><a data-module-id="nav.home.calendar" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.calendar"><span>Calendar</span></a></li><li class=""><a data-module-id="nav.home.tasks" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.tasks"><span>Tasks</span></a></li><li class=""><a data-module-id="nav.home.email-client" class="nav-module-link" href="javascript:openEmail()"><span>Inbox</span></a></li><li class=""><a data-module-id="nav.home.files" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.home&amp;navModule=nav.home.files"><span>Files</span></a></li></ul>
+                                <ul class="hover-nav-module-content-footer ">
+                            </ul>
+                    </div>
+                </div>
+            <div class="hover-nav-module hidden-false" data-system-id="nav.report">
+                    <div style="position: relative;">
+                        <h5 class="nav-header">
+                            <a data-module-id="nav.report.reports" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.report&amp;navModule=nav.report.reports"><span>Reporting</span></a></h5>
+                    </div>
+
+                    <div class="hover-nav-module-content">
+                        <ul class="hover-nav-module-content-body hide-settings">
+                                    <li class=""><a data-module-id="nav.report.reports" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.report&amp;navModule=nav.report.reports"><span>Reports</span></a></li><li class=""><a data-module-id="nav.report.cleanup" class="nav-module-link" href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.report&amp;navModule=nav.report.cleanup"><span>Data Cleanup</span></a></li></ul>
+                            <ul class="hover-nav-module-content-footer hide-settings">
+                            </ul>
+                    </div>
+                </div>
+            </section>
+
+    <div id="secondary-nav-mobile">
+        <div id="secondary-nav-icon-tray" class="secondary-nav-icon-tray">
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_home">
+            <span class="navrefs" title="Home">
+                <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-home-default"></use></svg></div>
+                <span class="navrefs-title">Home</span>
+                <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+            </span>
+
+            <div class="topnav-menu-content">
+                <header>Tools</header>
+                <div class="inf-tooltip-menu-with-rows">
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/infusionsoftTraining/home"><span>Basic Training</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/basicSetup/launchWizard"><span>Initial Setup</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Dashboard/userDashboard.jsp"><span>Dashboard</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=workingTab"><span>My Day</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=calendarTab"><span>Calendar</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=tasksTab"><span>Tasks</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Admin/myFiles.jsp"><span>Files</span></a></div>
+                    </div>
+            </div>
+        </section>
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_recent" onclick="Infusion.Component.Topnav.Recent.showRecent(this)">
+        <span class="navrefs" id="recent" title="Recent">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-recent-default"></use></svg></div>
+            <span class="navrefs-title">Recent</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content">
+            <header>Recent</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <ul id="recently_viewed_items">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_favorites">
+            <span class="navrefs" title="Favorites">
+                <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-favorites-default"></use></svg></div>
+                <span class="navrefs-title">Favorites</span>
+                <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+            </span>
+
+            <div class="topnav-menu-content">
+                <header>Your Favorites&nbsp;&nbsp;<a class="headerlink" href="https://bs413.infusionsoft.com/CustomLink/searchFavorites.jsp"><span>Edit</span></a></header>
+                <div id="secondary-nav-favorites" class="inf-tooltip-menu-with-rows">
+    <div class="favorites-header">
+        <b>my links</b>
+        <img src="./feb 2 news 2025_files/chevron-down.svg" width="10" height="10">
+    </div>
+
+    <ul class="favorites-list inf-hide" data-name="links-1">
+        <li>
+            <a href="https://bs413.infusionsoft.com/app/funnel/funnelEditor?funnelId=5938" target="_self">
+                <span>News Letter</span>
+            </a>
+        </li>
+
+        </ul>
+
+    </div>
+
+<script>
+    jQuery('#secondary-nav-favorites .favorites-header').click(function () {
+        jQuery(this).next('.favorites-list').toggleClass('inf-hide');
+        jQuery(this).toggleClass('open');
+    });
+</script>
+</div>
+        </section>
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_marketplace">
+        <span class="navrefs" title="Marketplace">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-marketplace-default"></use></svg></div>
+            <span class="navrefs-title">Marketplace</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content">
+            <header>Marketplace</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <div class="inf-tooltip-menu-row"><a href="https://marketplace.keap.com/apps" target="marketplace-services"><span>Services</span><label class="nf-tooltip-menu-row-label-new">New</label></a></div>
+                <div class="inf-tooltip-menu-row"><a href="https://marketplace.keap.com/experts" target="marketplace-apps"><span>Apps</span></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_account">
+        <span class="navrefs" id="profile" title="Profile">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-profile-default"></use></svg></div>
+            <span class="navrefs-title">Profile</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content" id="">
+            <section>
+                <header>Hi, Monika!</header>
+                <div class="inf-tooltip-menu-with-rows">
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Admin/editUserProfile_legacy.jsp"><span>Edit My Profile</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://accounts.infusionsoft.com/app/central/home"><span>Manage Accounts</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/apiSettings/view"><span>API Settings</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" onclick="if(confirm(&#39;Are you sure you want to log out?  You will lose any unsaved information.&#39;)) window.location=&#39;/j_spring_security_logout&#39;"><span>Log Out</span></a></div>
+                </div>
+            </section>
+            <section>
+                    <header>Your Accounts</header>
+                    <div class="inf-tooltip-menu-with-rows inf-linked-accounts-menu-with-rows">
+                        <div class="inf-tooltip-menu-row">
+                                        <a href="https://bs413.infusionsoft.com/"><span>bs413</span></a>
+                                    </div>
+                                </div>
+                </section>
+            <div style="clear: both"></div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_help_center">
+        <span class="navrefs" id="help-center" title="Help">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-help-default"></use></svg></div>
+            <span class="navrefs-title">Help</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content" id="">
+            <header>Help</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" onclick="openPopup()" rel="noopener noreferrer" id="feedbackPopup">
+                            <span>Give us feedback</span>
+                        </a>
+                    </div>
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://academy.keap.com/collections/keap-max-classic-courses" target="_blank" rel="noreferrer" id="productTraining">
+                            <span>Product Training</span>
+                        </a>
+                    </div>
+                <div class="inf-tooltip-menu-row">
+                    <a href="https://keap.community/" target="_blank" rel="noopener noreferrer" id="communityCenterLink">
+                        <span>Ask the Community</span>
+                    </a>
+                </div>
+
+                <div class="inf-tooltip-menu-row">
+                    <a href="http://help.infusionsoft.com/" target="_blank" rel="noopener noreferrer" id="helpCenterLink">
+                        <span>Help Center</span>
+                    </a>
+                </div>
+
+                <div class="inf-tooltip-menu-row">
+                    <a href="https://bs413.infusionsoft.com/app/stealth/supportAccess"><span>Support Access</span></a></div>
+
+                <div id="chatIframeWrapper"></div>
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" id="appEdition">
+                            <span>Keap Max Classic Edition</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+</div>
+<script>
+    function openPopup() {
+        const config = {
+            width: 'auto',
+            height: 'auto',
+            bodyPadding: '0',
+            border_radius: '12px'
+        };
+
+        Infusion.Popup.popLightbox('', '/Help/feedbackPopup.jsp', config);
+        jQuery('#cancelButton').click(function() {
+            Infusion.Popup.closeLightBox();
+        });
+    }
+</script>
+</div>
+
+    <div id="nav-back-to-top">
+        <img src="./feb 2 news 2025_files/arrow-up.svg" width="13" height="13">
+        <span>Back to top</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    jQuery('#nav-back-to-top').click(function() {
+        document.querySelector('#hover-nav-container').scrollTop = 0;
+    });
+</script>
+</div>
+
+                        <a href="https://bs413.infusionsoft.com/Dashboard/userDashboard.jsp" class="topnav-logo">
+                            <img src="./feb 2 news 2025_files/keap-logo-full.svg" height="32" width="75" alt="Keap Max Classic">
+                        </a>
+                    </div>
+
+                    </div>
+
+                <div class="topnav-icon-tray">
+                    <div id="quick_add_container">
+                            <a id="quick_add_button" class="top-bar-primary-button">
+                                <svg height="12" width="12">
+                                    <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-add-default"></use>
+                                </svg>
+                            </a>
+
+                            <div id="quick_add_form_container">
+                                <div id="quick_add_form" class="clearfix inf-hidden">
+                                    <div class="quick-add-header">Add a Contact</div>
+                                        <div id="quick_add_error_box" class="inf-hidden"></div>
+                                    <form method="post" title="View Email Batch" id="topNavQuickAddContactForm"><div id="defaultQuickAddForm">
+                                            <div class="quick-add-input-field-box">
+                                                <input data-errormessage="Please enter a first name." class="quick-add-input inline-invalid-styling field-valid" id="quickAddFirstName" name="quickAddFirstName" type="text" maxlength="40" placeholder="First Name"><input data-errormessage="Please enter a last name." class="quick-add-input quick-add-last-name-input inline-invalid-styling field-valid" id="quickAddLastName" name="quickAddLastName" type="text" maxlength="40" placeholder="Last Name"></div>
+                                            <div class="quick-add-input-field-box">
+                                                <div class="email-input-container">
+    <div class="inline-validation-wrapper">
+    <input data-delaytoggleshow="true" data-errormessage="Please enter a valid email format" data-errormessageenabled="true" onkeyup="Infusion.Component.Email.togglePermission(&#39;quickAddEmail&#39;, &#39;checkbox_quickAddEmail&#39;);" class="quick-add-email-input inline-invalid-styling field-valid" id="quickAddEmail" name="quickAddEmail" size="25" type="email" maxlength="75" autocomplete="off" placeholder="Email"><div class="inline-validation-error-message inf-hide">
+        Please enter a valid email format</div>
+</div><input id="original_quickAddEmail" name="original_quickAddEmail" type="hidden" value=""><div id="permissionCheck_quickAddEmail" class="new-input-permission-box inf-hide">
+            <div class="new-input-permission-element">
+                <input onclick="Infusion.Component.Topnav.QuickAdd.handleEmail(this, &#39;quickAddEmail&#39;)" class="rightMargin" id="checkbox_quickAddEmail" name="checkbox_quickAddEmail" type="checkbox" value="true"></div>
+            <div class="new-input-permission-label new-input-permission-element">
+                <label for="checkbox_quickAddEmail" title="View Email Batch">I have <a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" onclick="javascript:showPermission();">permission</a> to send marketing to this address.</label></div>
+        </div>
+    </div>
+
+<script type="text/javascript">Infusion.on("Component.Email").exec(function() {
+                
+            });</script></div>
+                                            <div class="quick-add-input-field-box">
+                                                <div id="quickAddPhoneType_container" component-id="quickAddPhoneType" class="selectEnhanced is-component" data-on="Component.SelectEnhanced" data-selectedvalue="Work" data-width="81" data-height="26" data-maxmenuheight="" data-imagewidth="" data-imageheight="" data-imageoffsetformouseover="" data-hidelabelonselect="">
+
+    <div id="quickAddPhoneType_btn" class="enhancedSelectBtn enhancedSelectBtnDefault" style="width: 81px; height: 26px; line-height: 26px;">
+        <div id="quickAddPhoneType_enhancedSelectBtnLabel" class="enhancedSelectBtnLabel preventSelect">
+    <div class="enhancedSelectOptionContent quickAddPhoneType_selectOptionContent" style="">Work</div>
+</div>
+        <div id="quickAddPhoneType_enhancedSelectBtnArrow" class="enhancedSelectBtnArrow" style="margin-top: 9px;"></div>
+    </div>
+    <div id="quickAddPhoneType_dropMenu" class="enhancedSelectDropMenu" style="display: none; width: 81px;">
+        <ul>
+            <div id="Work_option" class="enhancedSelectOption quickAddPhoneType_selectOption" data-optionvalue="Work" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quickAddPhoneType_selectOptionContent" style="">Work</div>
+</div>
+
+<input id="Work_message" type="hidden" value=""><div id="Home_option" class="enhancedSelectOption quickAddPhoneType_selectOption" data-optionvalue="Home" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quickAddPhoneType_selectOptionContent" style="">Home</div>
+</div>
+
+<input id="Home_message" type="hidden" value=""><div id="Mobile_option" class="enhancedSelectOption quickAddPhoneType_selectOption" data-optionvalue="Mobile" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quickAddPhoneType_selectOptionContent" style="">Mobile</div>
+</div>
+
+<input id="Mobile_message" type="hidden" value=""><div id="Other_option" class="enhancedSelectOption quickAddPhoneType_selectOption" data-optionvalue="Other" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quickAddPhoneType_selectOptionContent" style="">Other</div>
+</div>
+
+<input id="Other_message" type="hidden" value=""></ul>
+    </div>
+
+    <select class="inf-hide" data-required="false" id="quickAddPhoneType" name="quickAddPhoneType" data-on="Component.Select"><option selected="selected">Work</option><option>Home</option><option>Mobile</option><option>Other</option></select></div>
+
+<input class="quick-add-phone-input" id="quickAddPhoneNumber" name="quickAddPhoneNumber" type="text" placeholder="Phone"><input class="quick-add-phone-ext-input" id="quickAddPhoneExt" name="quickAddPhoneExt" type="text" placeholder="Ext"></div>
+                                        </div>
+                                        <div id="customQuickAddForm" class="inf-hidden">
+
+                                        </div>
+                                        <div id="defaultQuickAddSubmitButton" class="quick-add-submit-button">
+                                            <input class="inf-button btn primary" id="saveTopNavQuickAddContact" type="submit" value="Save"></div>
+                                        <div id="customQuickAddSubmitButton" class="quick-add-submit-button inf-hidden">
+                                            <input class="inf-button btn primary" id="saveTopNavCustomQuickAddContact" type="button" value="Save"></div>
+                                    </form></div>
+
+                                <div id="quick_add_form_success" class="inf-hidden" style="text-align:center">
+                                    <div class="is-component mini-notification" data-on="Component.Content.MiniNotification">
+    <div class="mini-notification-icon-box">
+        <svg height="20" width="20">
+            <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-check-circle_79BE37"></use>
+        </svg>
+    </div>
+    <div class="mini-notification-text mini-notification-success">
+        <span class="inf-strong">Success!</span><a id="contact_name_link" href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#"></a>was added to your Contacts.</div>
+</div><div id="recipientRiskWarningContainer" class="recipient-risk-warning-container inf-hide">
+                                            <div class="is-component mini-notification" data-on="Component.Content.MiniNotification">
+    <div class="mini-notification-icon-box">
+        <svg height="20" width="20">
+            <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-exclamation-circle_E34825"></use>
+        </svg>
+    </div>
+    <div class="mini-notification-text mini-notification-error">
+        <div class="well recipient-risk-warning-well">
+                                                <div>Can't send to email <div id="recipientRiskEmail"></div></div>
+                                                <div>Status set to "Opt-out: System"</div>
+                                                <a id="recipientRiskMoreInfo" href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422">More info</a>
+                                            </div></div>
+</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="quick_search_container">
+                                        <form id="top_right_search_form" action="https://bs413.infusionsoft.com/app/report/findARecordHandler?OWASP_CSRFTOKEN=BHTC-ER2Y-QOM8-9U6S-IRGH-ELV9-HJY7-HGHX" method="post">
+                                            <a id="quick_search_button" class="top-bar-primary-button">
+                                                <svg height="28" width="28"><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-search-combined"></use></svg>
+                                            </a>
+
+                                            <div class="quick-search-input">
+                                                <div id="quick_search_select_container" component-id="quick_search_select" class="selectEnhanced is-component" data-on="Component.SelectEnhanced" data-selectedvalue="com.infusion.util.report.reports.find.FindAPersonSearch" data-width="" data-height="" data-maxmenuheight="" data-imagewidth="" data-imageheight="" data-imageoffsetformouseover="" data-hidelabelonselect="true" style="display: none;">
+
+    <div id="quick_search_select_btn" class="enhancedSelectBtn enhancedSelectBtnDefault">
+        <div id="quick_search_select_enhancedSelectBtnLabel" class="enhancedSelectBtnLabel preventSelect">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">&nbsp;</div>
+</div>
+        <div id="quick_search_select_enhancedSelectBtnArrow" class="enhancedSelectBtnArrow"></div>
+    </div>
+    <div id="quick_search_select_dropMenu" class="enhancedSelectDropMenu" style="display: none;">
+        <ul>
+            <div id="com.infusion.util.report.reports.find.FindAPersonSearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindAPersonSearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Contact</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindAPersonSearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindACompanySearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindACompanySearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Company</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindACompanySearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindATaskSearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindATaskSearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Task/Appt/Note</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindATaskSearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindAnOrderSearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindAnOrderSearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Order</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindAnOrderSearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindASubscriptionSearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindASubscriptionSearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Subscription</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindASubscriptionSearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindAnAffiliateSearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindAnAffiliateSearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Referral Partner</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindAnAffiliateSearch_message" type="hidden" value=""><div id="com.infusion.util.report.reports.find.FindAnOpportunitySearch_option" class="enhancedSelectOption quick_search_select_selectOption" data-optionvalue="com.infusion.util.report.reports.find.FindAnOpportunitySearch" data-selectedimage="">
+    <div class="enhancedSelectOptionContent quick_search_select_selectOptionContent" style="">Opportunity</div>
+</div>
+
+<input id="com.infusion.util.report.reports.find.FindAnOpportunitySearch_message" type="hidden" value=""></ul>
+    </div>
+
+    <select class="inf-hide" data-required="false" id="quick_search_select" name="reportClass" data-on="Component.Select"><option selected="selected" value="com.infusion.util.report.reports.find.FindAPersonSearch">Contact</option><option value="com.infusion.util.report.reports.find.FindACompanySearch">Company</option><option value="com.infusion.util.report.reports.find.FindATaskSearch">Task/Appt/Note</option><option value="com.infusion.util.report.reports.find.FindAnOrderSearch">Order</option><option value="com.infusion.util.report.reports.find.FindASubscriptionSearch">Subscription</option><option value="com.infusion.util.report.reports.find.FindAnAffiliateSearch">Referral Partner</option><option value="com.infusion.util.report.reports.find.FindAnOpportunitySearch">Opportunity</option></select></div>
+
+<input id="mainSearchData" name="mainSearchData" placeholder="Find a contact..." type="text" tabindex="-1" autocomplete="off" value="" class="search-widget-searchfor ui-autocomplete-input" maxlength="100">
+
+                                                <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></div>
+                                        </form>
+                                    </div>
+                                <div id="secondary-nav-desktop">
+                            <div id="secondary-nav-icon-tray" class="secondary-nav-icon-tray">
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_home">
+            <span class="navrefs" title="Home">
+                <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-home-default"></use></svg></div>
+                <span class="navrefs-title">Home</span>
+                <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+            </span>
+
+            <div class="topnav-menu-content">
+                <header>Tools</header>
+                <div class="inf-tooltip-menu-with-rows">
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/infusionsoftTraining/home"><span>Basic Training</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/basicSetup/launchWizard"><span>Initial Setup</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Dashboard/userDashboard.jsp"><span>Dashboard</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=workingTab"><span>My Day</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=calendarTab"><span>Calendar</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/myDay/home?tab=tasksTab"><span>Tasks</span></a></div>
+                        <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Admin/myFiles.jsp"><span>Files</span></a></div>
+                    </div>
+            </div>
+        </section>
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_recent" onclick="Infusion.Component.Topnav.Recent.showRecent(this)">
+        <span class="navrefs" id="recent" title="Recent">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-recent-default"></use></svg></div>
+            <span class="navrefs-title">Recent</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content">
+            <header>Recent</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <ul id="recently_viewed_items">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_favorites">
+            <span class="navrefs" title="Favorites">
+                <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-favorites-default"></use></svg></div>
+                <span class="navrefs-title">Favorites</span>
+                <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+            </span>
+
+            <div class="topnav-menu-content">
+                <header>Your Favorites&nbsp;&nbsp;<a class="headerlink" href="https://bs413.infusionsoft.com/CustomLink/searchFavorites.jsp"><span>Edit</span></a></header>
+                <div id="secondary-nav-favorites" class="inf-tooltip-menu-with-rows">
+    <div class="favorites-header">
+        <b>my links</b>
+        <img src="./feb 2 news 2025_files/chevron-down.svg" width="10" height="10">
+    </div>
+
+    <ul class="favorites-list inf-hide" data-name="links-1">
+        <li>
+            <a href="https://bs413.infusionsoft.com/app/funnel/funnelEditor?funnelId=5938" target="_self">
+                <span>News Letter</span>
+            </a>
+        </li>
+
+        </ul>
+
+    </div>
+
+<script>
+    jQuery('#secondary-nav-favorites .favorites-header').click(function () {
+        jQuery(this).next('.favorites-list').toggleClass('inf-hide');
+        jQuery(this).toggleClass('open');
+    });
+</script>
+</div>
+        </section>
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_marketplace">
+        <span class="navrefs" title="Marketplace">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-marketplace-default"></use></svg></div>
+            <span class="navrefs-title">Marketplace</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content">
+            <header>Marketplace</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <div class="inf-tooltip-menu-row"><a href="https://marketplace.keap.com/apps" target="marketplace-services"><span>Services</span><label class="nf-tooltip-menu-row-label-new">New</label></a></div>
+                <div class="inf-tooltip-menu-row"><a href="https://marketplace.keap.com/experts" target="marketplace-apps"><span>Apps</span></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_account">
+        <span class="navrefs" id="profile" title="Profile">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-profile-default"></use></svg></div>
+            <span class="navrefs-title">Profile</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content" id="">
+            <section>
+                <header>Hi, Monika!</header>
+                <div class="inf-tooltip-menu-with-rows">
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/Admin/editUserProfile_legacy.jsp"><span>Edit My Profile</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://accounts.infusionsoft.com/app/central/home"><span>Manage Accounts</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/apiSettings/view"><span>API Settings</span></a></div>
+                    <div class="inf-tooltip-menu-row"><a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" onclick="if(confirm(&#39;Are you sure you want to log out?  You will lose any unsaved information.&#39;)) window.location=&#39;/j_spring_security_logout&#39;"><span>Log Out</span></a></div>
+                </div>
+            </section>
+            <section>
+                    <header>Your Accounts</header>
+                    <div class="inf-tooltip-menu-with-rows inf-linked-accounts-menu-with-rows">
+                        <div class="inf-tooltip-menu-row">
+                                        <a href="https://bs413.infusionsoft.com/"><span>bs413</span></a>
+                                    </div>
+                                </div>
+                </section>
+            <div style="clear: both"></div>
+        </div>
+    </section>
+
+    <section class="topnav-menu topnav-button has-topnav-content" id="top_nav_help_center">
+        <span class="navrefs" id="help-center" title="Help">
+            <div class="navrefs-icon"><svg><use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-help-default"></use></svg></div>
+            <span class="navrefs-title">Help</span>
+            <div class="navrefs-arrow"><img src="./feb 2 news 2025_files/chevron-down.svg" width="9"></div>
+        </span>
+
+        <div class="topnav-menu-content" id="">
+            <header>Help</header>
+            <div class="inf-tooltip-menu-with-rows">
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" onclick="openPopup()" rel="noopener noreferrer" id="feedbackPopup">
+                            <span>Give us feedback</span>
+                        </a>
+                    </div>
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://academy.keap.com/collections/keap-max-classic-courses" target="_blank" rel="noreferrer" id="productTraining">
+                            <span>Product Training</span>
+                        </a>
+                    </div>
+                <div class="inf-tooltip-menu-row">
+                    <a href="https://keap.community/" target="_blank" rel="noopener noreferrer" id="communityCenterLink">
+                        <span>Ask the Community</span>
+                    </a>
+                </div>
+
+                <div class="inf-tooltip-menu-row">
+                    <a href="http://help.infusionsoft.com/" target="_blank" rel="noopener noreferrer" id="helpCenterLink">
+                        <span>Help Center</span>
+                    </a>
+                </div>
+
+                <div class="inf-tooltip-menu-row">
+                    <a href="https://bs413.infusionsoft.com/app/stealth/supportAccess"><span>Support Access</span></a></div>
+
+                <div id="chatIframeWrapper"><iframe id="chatIframe" name="chatIframe" width="170" height="30" src="./feb 2 news 2025_files/generateChatButton.html" frameborder="0" scrolling="no"></iframe></div>
+                <div class="inf-tooltip-menu-row">
+                        <a href="https://bs413.infusionsoft.com/app/report/viewEmailBatchReport/19422#" id="appEdition">
+                            <span>Keap Max Classic Edition</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+</div>
+<script>
+    function openPopup() {
+        const config = {
+            width: 'auto',
+            height: 'auto',
+            bodyPadding: '0',
+            border_radius: '12px'
+        };
+
+        Infusion.Popup.popLightbox('', '/Help/feedbackPopup.jsp', config);
+        jQuery('#cancelButton').click(function() {
+            Infusion.Popup.closeLightBox();
+        });
+    }
+</script>
+<script type="text/javascript">Infusion.on("Component.Topnav.QuickAdd").exec(function() {
+                
+                                Infusion.Component.Topnav.QuickAdd.initQuickAddButton(0, false);
+                            
+            });</script><script type="text/javascript">Infusion.on("Component.Topnav.QuickSearch").exec(function() {
+                
+                                Infusion.Component.Topnav.QuickSearch.initQuickSearchButton(false);
+                                Infusion.Component.Topnav.QuickSearch.initializeAutoCompleteSearch(false, false);
+                            
+            });</script></div>
+                    </div>
+                </nav>
+        </div>
+    <div id="timeoutDiv"></div>
+
+                <div id="subnav-container">
+                        <div id="nav" class="nav">
+                            <nav id="subnav">
+            <ul id="subnav-list">
+                <li class=" has-subnav-menu" id="nav_funnel">
+                    <span class="subnav-menu-title">
+                                Automation Builder<svg height="8" width="8" class="subnav-title-image">
+                                    <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                </svg>
+                            </span>
+                        <div class="subnav-menu-content">
+                        <ul>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=funnel&amp;navLink=search-funnel"><span>View Automations</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=funnel&amp;navLink=add-funnel"><span>Add an Automation</span>
+                                        </a></li>
+                            </ul>
+                    </div>
+                    </li>
+                <li class="" id="nav_broadcast">
+                    <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=broadcast"><span class="subnav-menu-title">
+                                            Email &amp; Broadcasts<svg height="8" width="8" class="subnav-title-image">
+                                                <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                            </svg>
+                                        </span>
+                                    </a></li>
+                <li class="" id="nav_leadGeneration">
+                    <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=leadGeneration"><span class="subnav-menu-title">
+                                            Lead Generation<svg height="8" width="8" class="subnav-title-image">
+                                                <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                            </svg>
+                                        </span>
+                                    </a></li>
+                <li class="" id="nav_template">
+                    <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=template"><span class="subnav-menu-title">
+                                            Templates<svg height="8" width="8" class="subnav-title-image">
+                                                <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                            </svg>
+                                        </span>
+                                    </a></li>
+                <li class="" id="nav_liquid">
+                    <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=liquid"><span class="subnav-menu-title">
+                                            Dynamic Content<svg height="8" width="8" class="subnav-title-image">
+                                                <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                            </svg>
+                                        </span>
+                                    </a></li>
+                <li class=" has-subnav-menu" id="nav_marketingsite">
+                    <span class="subnav-menu-title">
+                                Landing Pages<svg height="8" width="8" class="subnav-title-image">
+                                    <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                </svg>
+                            </span>
+                        <div class="subnav-menu-content">
+                        <ul>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=marketingsite&amp;navLink=search-site"><span>View Landing Pages</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=marketingsite&amp;navLink=add-site"><span>Add a Landing Page</span>
+                                        </a></li>
+                            </ul>
+                    </div>
+                    </li>
+                <li class=" has-subnav-menu" id="nav_legacy">
+                    <span class="subnav-menu-title">
+                                Legacy<svg height="8" width="8" class="subnav-title-image">
+                                    <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                </svg>
+                            </span>
+                        <div class="subnav-menu-content">
+                        <ul>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=search-campaign"><span>View Automations</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=add-campaign"><span>Add a Campaign (Legacy)</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=search-followUpSequence"><span>View Follow-Up Sequences</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=add-followUpSequence"><span>Add or Copy a Follow-Up Sequence</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=search-webForm"><span>View Web Forms</span>
+                                        </a></li>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=legacy&amp;navLink=add-webForm"><span>Add a Web Form</span>
+                                        </a></li>
+                            </ul>
+                    </div>
+                    </li>
+                <li class="menu-selected has-subnav-menu" id="nav_nav.marketing.reports">
+                    <span class="subnav-menu-title">
+                                Reports<svg height="8" width="8" class="subnav-title-image">
+                                    <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                </svg>
+                            </span>
+                        <div class="subnav-menu-content">
+                        <ul>
+                            <li>
+                                <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=nav.marketing.reports&amp;navLink=report.MARKETING"><span>Marketing</span>
+                                        </a></li>
+                            </ul>
+                    </div>
+                    </li>
+                <li class="" id="nav_nav.marketing.settings">
+                    <a href="https://bs413.infusionsoft.com/app/nav/link?navSystem=nav.marketing&amp;navModule=nav.marketing.settings"><span class="subnav-menu-title">
+                                            Settings<svg height="8" width="8" class="subnav-title-image">
+                                                <use xlink:href="/resources/svg/topnav-combined.svg?b=1.70.0.906323-hf-202602241301#ic-chevron-subnav"></use>
+                                            </svg>
+                                        </span>
+                                    </a></li>
+                </ul>
+        </nav>
+    </div>
+                    </div>
+                </div>
+
+            <div id="inf-content" class="">
+                <!-- sidebar -->
+                <div id="contentcontainer">
+                    <div id="pagecontent">
+                        <span id="noticeSpan"></span>
+
+                        <div style="width:350px;">
+                            <noscript>
+                                <div class="alert-message block-notice-div warning" id="notice">You must enable Javascript to use Keap!</div></noscript>
+                        </div>
+                        <style>
+            #inf-content {
+                background-color: #F6F6F6;
+                width: 80%;
+                max-width: 960px;
+            }
+        </style>
+
+        <batch-report batch-id="19422" is-stealth-user="false" is-scheduled-email-date-time-fix-enabled="" show-batch-report-apple-privacy-ftu-modal=""><iron-ajax id="getBatchInformationAjax" method="GET" content-type="application/json" handle-as="json" class="style-scope batch-report" hidden=""></iron-ajax><iron-ajax id="dismissAppleFtuGuideAjax" method="PUT" content-type="application/json" body="true" url="/app/showHideEmailOpens/dismissAppleFtuGuideBroadcastReport" class="style-scope batch-report" hidden=""></iron-ajax><iron-ajax id="toggleShowHideEmailOpensAjax" method="PUT" content-type="application/json" url="/app/showHideEmailOpens/toggleShowHideEmailOpens" class="style-scope batch-report" hidden=""></iron-ajax><div class="style-scope batch-report"><div class="header-row style-scope batch-report"><h1 class="style-scope batch-report">Your Weekly RPI Education News - February is Here!</h1><template is="dom-if" class="style-scope batch-report"></template></div><div class="container style-scope batch-report"><div class="fixed style-scope batch-report"><h3 class="style-scope batch-report">Email Information</h3><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Created</div><div class="label-group-body style-scope batch-report"> Sat, Feb 1, 2025, 05:05 PM</div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Scheduled start</div><div class="label-group-body style-scope batch-report"> Feb 2, 2025, 8:30 AM in the America/New_York timezone</div></div><template is="dom-if" class="style-scope batch-report"></template><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> From</div><div class="label-group-body style-scope batch-report"> RPI Education &lt;info@rpinvestments.ca&gt;</div></div><div class="recipient-criteria-section style-scope batch-report"><div class="label style-scope batch-report"> To</div><div class="label-group-body style-scope batch-report"><ul class="recipient-criteria style-scope batch-report"><li class="style-scope batch-report"><iron-icon class="recipient-icon style-scope batch-report x-scope iron-icon-1" icon="inf-icons:tag"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path class="st0 style-scope iron-icon" d="M469.5 0H312.3c-7.1 0-12.4.4-17.5 4.6-2.8 1.6-6.5 5.8-8.9 8.1L11.4 287.3c-15.2 15.2-15.2 39.7 0 54.9l146.4 146.5c15.2 15.2 39.7 15.2 54.9 0L487.3 214c5.7-5.7 9.2-12.7 10.7-20 .6-2.4 1-4.8 1-7.3V29.5C499 13.2 485.8 0 469.5 0zM365.5 256.3 204.2 417.5c-12.7 12.7-33.3 12.7-46.1 0l-76.8-76.7c-12.7-12.7-12.7-33.4 0-46l161.2-161.2c12.7-12.7 33.3-12.7 46.1 0l76.8 76.7C378.2 222.9 378.2 243.6 365.5 256.3zM425.6 126.5c-14.4 14.4-37.7 14.4-52.1 0-14.4-14.4-14.4-37.7 0-52.1 14.4-14.4 37.7-14.4 52.1 0C439.9 88.9 439.9 112.1 425.6 126.5z"></path></g></svg></iron-icon><iron-icon class="recipient-icon style-scope batch-report x-scope iron-icon-1" icon="inf-icons:bull-list" hidden=""><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><circle cx="71.8" cy="147.2" r="38.1" class="style-scope iron-icon"></circle><circle cx="71.8" cy="459.9" r="38.1" class="style-scope iron-icon"></circle><path d="M546 178.1H234.7c-11.2 0-20.2-9-20.2-20.2v-35.7c0-11.2 9-20.2 20.2-20.2H546c11.2 0 20.2 9 20.2 20.2v35.7C566.2 169.1 557.2 178.1 546 178.1z" class="style-scope iron-icon"></path><path d="M546 498H234.7c-11.2 0-20.2-9-20.2-20.2v-35.7c0-11.2 9-20.2 20.2-20.2H546c11.2 0 20.2 9 20.2 20.2v35.7C566.2 488.9 557.2 498 546 498z" class="style-scope iron-icon"></path><circle cx="71.8" cy="303.6" r="38.1" class="style-scope iron-icon"></circle><path d="M546 338.1H234.7c-11.2 0-20.2-9-20.2-20.2v-35.7c0-11.2 9-20.2 20.2-20.2H546c11.2 0 20.2 9 20.2 20.2v35.7C566.2 329 557.2 338.1 546 338.1z" class="style-scope iron-icon"></path></g></svg></iron-icon> (LEGACY) News - SUBSCRIBED</li><template is="dom-repeat" as="recipient" class="style-scope batch-report"></template></ul></div><div class="label-group-body style-scope batch-report" hidden=""><div class="empty-state style-scope batch-report"> No recipient search criteria available</div></div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Subject</div><div class="label-group-body style-scope batch-report"> Your Weekly RPI Education News - February is Here!</div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Body</div><div class="label-group-body style-scope batch-report"> <a class="link style-scope batch-report">View email</a></div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Current status<batch-report-status-tooltip class="style-scope batch-report"><iron-icon class="tooltip style-scope batch-report-status-tooltip x-scope iron-icon-1" icon="inf-icons:i-circle" title="Learn more"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path class="shape style-scope iron-icon" d="M296 0C130.3 2.2-2.2 138.4 0 304 2.2 469.6 138.3 602.2 304 600c165.6-2.2 298.2-138.3 296-304C597.8 130.3 461.6-2.2 296 0zM329.2 100c30.5 0 39.5 17.7 39.5 37.9 0 25.3-20.2 48.7-54.8 48.7-28.9 0-42.6-14.5-41.8-38.5C272.2 127.8 289.1 100 329.2 100zM251.1 487.5c-20.8 0-36.1-12.6-21.5-68.3l23.9-98.6c4.2-15.8 4.9-22.1 0-22.1-6.3 0-33.3 10.9-49.3 21.7l-10.4-17.1c50.7-42.3 109-67.2 134-67.2 20.8 0 24.3 24.6 13.9 62.6l-27.4 103.7c-4.9 18.3-2.8 24.6 2.1 24.6 6.3 0 26.8-7.6 46.9-23.4l11.8 15.8C325.7 468.5 271.9 487.5 251.1 487.5z"></path></g></svg></iron-icon><inf-dropdown id="statusTooltipDropdown" class="style-scope batch-report-status-tooltip"> Your batch has completed!</inf-dropdown></batch-report-status-tooltip></div><div class="label-group-body style-scope batch-report"><batch-report-status class="style-scope batch-report"> Sent</batch-report-status><batch-report-stop-button button-text="Stop Email" class="style-scope batch-report"><iron-ajax id="stopEmailAjax" content-type="application/json" method="POST" class="style-scope batch-report-stop-button" hidden=""></iron-ajax><template is="dom-if" class="style-scope batch-report-stop-button"></template></batch-report-stop-button><template is="dom-if" class="style-scope batch-report"></template><template is="dom-if" class="style-scope batch-report"></template><template is="dom-if" class="style-scope batch-report"></template></div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Start time</div><div class="label-group-body style-scope batch-report"> Sun, Feb 2, 2025, 08:30 AM</div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> End time</div><div class="label-group-body style-scope batch-report"> Sun, Feb 2, 2025, 08:30 AM</div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Emails pending</div><div class="label-group-body style-scope batch-report"> 0</div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Emails sent</div><div class="label-group-body style-scope batch-report"> <a href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;IgnoreLastVisited=true" class="style-scope batch-report">2700</a></div></div><div class="mb-15 style-scope batch-report"><div class="label style-scope batch-report"> Emails errored</div><div class="label-group-body style-scope batch-report"> <a href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=QueuedEmailSearch&amp;view=resultsPage&amp;RunSearch=true&amp;Status_DATA=Error&amp;MailBatchId_DATA=19422" class="style-scope batch-report">0</a></div></div></div><div class="flex-item style-scope batch-report"><h3 class="style-scope batch-report">Broadcast stats</h3><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Total sent" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 100%; border-radius: 4px;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Bounced_DATA=IS+NULL&amp;IgnoreLastVisited=true">2700</a></span> <span class="smaller-font style-scope report-percentage-bar">Total sent</span></span> <span class="style-scope report-percentage-bar">100%</span></div></div></report-percentage-bar></div><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Opens (Unique)" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 18.6%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Opened_DATA=IS+NOT+NULL&amp;IgnoreLastVisited=true">503</a></span> <span class="smaller-font style-scope report-percentage-bar">Opens (Unique)</span> <span class="style-scope batch-report"><span class="number style-scope batch-report">503</span> <span class="smaller-font style-scope batch-report">Opens (Total)</span></span></span> <span class="style-scope report-percentage-bar">18.6%</span></div></div></report-percentage-bar></div><template is="dom-if" class="style-scope batch-report"></template><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Clicks (Unique)" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 0.1%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Clicked_DATA=IS+NOT+NULL&amp;IgnoreLastVisited=true">3</a></span> <span class="smaller-font style-scope report-percentage-bar">Clicks (Unique)</span> <span class="style-scope batch-report"><span class="number style-scope batch-report">3</span> <span class="smaller-font style-scope batch-report">Clicks (Total)</span></span></span> <span class="style-scope report-percentage-bar">0.1%</span></div></div></report-percentage-bar></div><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Unopened" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 80.3%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Opened_DATA=IS+NULL&amp;Bounced_DATA=IS+NULL&amp;IgnoreLastVisited=true">2169</a></span> <span class="smaller-font style-scope report-percentage-bar">Unopened</span></span> <span class="style-scope report-percentage-bar">80.3%</span></div></div></report-percentage-bar></div><template is="dom-if" class="style-scope batch-report"></template><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Opt-ins" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 0%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Opted_DATA=IS+NOT+NULL&amp;OptType_TYPE=1&amp;OptType_DATA=DoubleOptin&amp;OptType_DATA=Confirmed&amp;IgnoreLastVisited=true">0</a></span> <span class="smaller-font style-scope report-percentage-bar">Opt-ins</span></span> <span class="style-scope report-percentage-bar">0%</span></div></div></report-percentage-bar></div><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Opt-outs" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 0.1%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Opted_DATA=IS+NOT+NULL&amp;OptType_TYPE=1&amp;OptType_DATA=Manual&amp;OptType_DATA=ListUnsubscribe&amp;IgnoreLastVisited=true">3</a></span> <span class="smaller-font style-scope report-percentage-bar">Opt-outs</span></span> <span class="style-scope report-percentage-bar">0.1%</span></div></div></report-percentage-bar></div><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Bounces" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 1%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Bounced_DATA=IS+NOT+NULL&amp;IgnoreLastVisited=true">28</a></span> <span class="smaller-font style-scope report-percentage-bar">Bounces</span></span> <span class="style-scope report-percentage-bar">1%</span></div></div></report-percentage-bar></div><div class="mb-25 style-scope batch-report"><report-percentage-bar type="Complaints" class="style-scope batch-report x-scope report-percentage-bar-0"><div class="body style-scope report-percentage-bar"><div class="bar style-scope report-percentage-bar"><div class="progress style-scope report-percentage-bar" id="progressBar" style="width: 0%;"></div></div><div class="number-row style-scope report-percentage-bar"> <span class="style-scope report-percentage-bar"><span class="number style-scope report-percentage-bar"><a class="style-scope report-percentage-bar" href="https://bs413.infusionsoft.com/Reports/searchTemplate.jsp?reportClass=EmailSentSearch&amp;view=resultsPage&amp;RunSearch=true&amp;BatchId_DATA=19422&amp;Opted_DATA=IS+NOT+NULL&amp;OptType_TYPE=1&amp;OptType_DATA=Spam&amp;OptType_DATA=Feedback&amp;IgnoreLastVisited=true">1</a></span> <span class="smaller-font style-scope report-percentage-bar">Complaints</span></span> <span class="style-scope report-percentage-bar">0%</span></div></div></report-percentage-bar></div></div></div></div><template is="dom-if" class="style-scope batch-report"></template></batch-report>
+
+        <script>
+            function getErrors() {
+                alert("This process can take a long time depending on the number of errors!");
+                window.open("/Email/downloadBatchErrors.jsp?id=19422");
+            }
+
+            jQuery(document).ready(function() {
+                refreshMe();
+            });
+
+            function refreshMe() {
+                var done = document.getElementById("doneHidden");
+                if (done == null) {
+                    setTimeout(refreshMe, 5000);
+                }
+            }
+        </script></div>
+
+                </div>
+                <!-- contentcontainer -->
+            </div>
+
+            <div id="footer">
+                <div style="text-align: center;">
+    <span id="buildNumber">
+        <!-- This is the build number and is created from a build.txt.token file -->
+        1.70.0.906323-hf-202602241301</span>
+    <span id="contextIdentifier">reportViewEmailBatchReport19422</span>
+    </div></div>
+
+        </center>
+    </div><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+    <script language="javascript" type="text/javascript">
+        Infusion.on('Component.Context').readyExec('setContext', ['reportViewEmailBatchReport19422', 'reportViewEmailBatchReport19422']);
+    </script>
+
+    <link rel="prefetch" href="https://bs413.infusionsoft.com/resources/polymercomponents/dist/elements-bundle.min.html?b=1.70.0.906323-hf-202602241301"><input type="hidden" id="dmarcLoginValidationDone" value="true">
+
+        <div id="blankIframeWrapper" style="display:none;"><iframe id="remoteFrame" name="remoteFrame" width="0" height="0" src="./feb 2 news 2025_files/blank.html"></iframe></div>
+
+        <input type="hidden" value="contactModelOff" id="contactSucessStatus">
+
+        <div id="popupTaskIframeWrapper" style="display:none;"><iframe id="popUpTask" name="popUpTask" width="0" height="0" src="./feb 2 news 2025_files/popUpTask.html"></iframe></div>
+        <script type="text/javascript">jQuery(window).on("load",function() {
+                
+            function createIFrame(id, name, width, height, src) {
+            var iframe = document.createElement('iframe');
+            iframe.id = id;
+            iframe.name = name;
+            iframe.width = width;
+            iframe.height = height || 0;
+            iframe.src = src;
+
+            return iframe;
+            }
+
+            var blankIframeWrapper = document.querySelector('#blankIframeWrapper');
+            if (blankIframeWrapper !== null) {
+            var src = '/files/blank.jsp?b=1.70.0.906323-hf-202602241301';
+            var blankIframe = createIFrame('remoteFrame', 'remoteFrame', 0, 0, src);
+            blankIframeWrapper.appendChild(blankIframe);
+            }
+
+            var dmarcLoginValidationDone = document.querySelector('#dmarcLoginValidationDone');
+            if (dmarcLoginValidationDone.value === 'null') {
+            new Promise(function(resolve) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/app/dmarcDomain/validate/login', true);
+            xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+            var showDmarcPopup = xhr.response;
+            if (showDmarcPopup === 'true') {
+            resolve();
+            }
+            }
+            }
+            };
+            xhr.send();
+            }).then(function() {
+            var configuration = {width: '508px', bodyPadding: '0'};
+            Infusion.Popup.popLightbox(
+            'Your Email Address Is Impacting Deliverability',
+            '/Email/dmarcLoginWarning.jsp',
+            configuration
+            );
+            });
+            }
+
+            var popupTaskIframeWrapper = document.querySelector('#popupTaskIframeWrapper');
+            if (popupTaskIframeWrapper !== null) {
+            var src = '/files/popUpTask.jsp?' + Math.random();
+            var popupTaskIframe = createIFrame('popUpTask', 'popUpTask', 0, 0, src);
+            popupTaskIframeWrapper.appendChild(popupTaskIframe);
+            }
+
+            setTimeout(function() {
+                var chatIframeWrapper = document.querySelector('#secondary-nav-desktop #chatIframeWrapper');
+
+                if (chatIframeWrapper !== null) {
+                    var src = '/app/chat/generateChatButton';
+                    var chatIframe = createIFrame('chatIframe', 'chatIframe', 170, 30, src);
+                    chatIframe.frameBorder = 0;
+                    chatIframe.scrolling = 'no';
+                    chatIframeWrapper.appendChild(chatIframe);
+                }
+            });
+        
+            });</script><!-- BEGIN Invitation Positioning -->
+        <script type="text/javascript">
+            var lpPosY = 100;
+            var lpPosX = 100;
+        </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("#hover-nav-container").find(".switch-toggle-section").click(function(e){
+                jQuery("#hover-nav-container").find(".new-feature-menu").toggle();
+                e.stopPropagation();
+            });
+
+            jQuery("#hover-nav-container").find(".new-navigation").click(function() {
+                let userId = jQuery("#userId-value").val();
+                jQuery("#hover-nav-container").find(".new-navigation").find(".slider").removeClass("off");
+                jQuery.ajax({
+                    url: '/app/nav/saveAppSetting?userId='+userId+'&swap=true',
+                    type: "PUT",
+                    success: function() {
+                        window.location.reload();
+                    }
+                });
+            });
+
+            jQuery("#hover-nav-container").find(".new-contact-view").click(function(){
+                let newContactViewEnabled = jQuery("#contact-toggle").val() === 'true';
+                let swap = !newContactViewEnabled;
+                let userId = jQuery("#userId-value").val();
+                if (swap) {
+                    jQuery("#hover-nav-container").find(".new-contact-view").find(".slider").removeClass("off");
+                } else {
+                    jQuery("#hover-nav-container").find(".new-contact-view").find(".slider").addClass("off");
+                }
+                jQuery.ajax({
+                    url: '/app/contact/saveAppSetting?userId='+userId+'&swap='+swap+'',
+                    type: "PUT",
+                    success: function() {
+                        if (window.location.href.includes('manageContact') || window.location.href.includes('ManageContact')) {
+                            window.location.reload();
+                        } else {
+                            jQuery("#contact-toggle").val(swap);
+                        }
+                    }
+                });
+            });
+
+            jQuery("#hover-nav-container").find(".ui-refresh").click(function() {
+                jQuery("#hover-nav-container").find(".ui-refresh").find(".slider").removeClass("off");
+                window.location = "/app/appSettings/refreshUiSetting/1";
+            });
+
+            function checkToggles() {
+                if (jQuery("#contact-toggle").val() === 'true') {
+                    jQuery("#hover-nav-container").find(".new-contact-view").find(".slider").removeClass("off");
+                }
+                if (jQuery("#new-builder-toggle").val() === 'true') {
+                    jQuery("#hover-nav-container").find(".new-automation-builder").find(".slider").removeClass("off");
+                }
+            }
+
+            checkToggles();
+        });
+    </script>
+
+    <script>
+            (function checkSettingPage() {
+                const settingsBackbutton = document.querySelector("#settingsBackbtn");
+                const contentContainerFullwidth = document.querySelector('#contentcontainer-fullwidth');
+                const contentContainer = document.querySelector('#contentcontainer');
+
+                if (settingsBackbutton) {
+                    settingsBackbutton.style.display = "inline";
+                    if (contentContainerFullwidth) contentContainerFullwidth.style.marginLeft = "100px";
+                    if (contentContainer) contentContainer.style.marginLeft = "100px";
+                 }
+                let settingUrl = window.location.href;
+                if (settingUrl.includes("showSection") || settingUrl.includes("userDashboard.jsp")) {
+                    if (settingsBackbutton) settingsBackbutton.style.display = "none";
+                    if (contentContainerFullwidth) contentContainerFullwidth.style.marginLeft = "32px";
+                    if (contentContainer) contentContainer.style.margin = "20px";
+                }
+            })();
+        </script>
+    
+
+
+<script type="text/javascript">
+    function showInterfaceToggleSetup(displayElements){
+        var setupView = document.getElementById('interface-toggle-setup');
+        var setupButtonOn = document.getElementById('keap-toggle-open-dialog-button');
+        var setupButtonOff = document.getElementById('keap-toggle-close-dialog-button');
+        if (displayElements) {
+            setupView.classList.remove('hidden');
+            setupButtonOff.classList.remove('hidden');
+            setupButtonOn.classList.add('hidden');
+        } else{
+            setupView.classList.add('hidden');
+            setupButtonOff.classList.add('hidden')
+            setupButtonOn.classList.remove('hidden');
+        }
+    }
+
+    jQuery("#subnav ul#subnav-list li.has-subnav-menu").click(function() {
+        var menuItem = jQuery(this);
+        var submenuWrapper = jQuery('> .subnav-menu-content', menuItem);
+
+        var menuItemPos = menuItem.offset();
+
+        submenuWrapper.css({
+            top: menuItemPos.top + Math.round(menuItem.outerHeight()),
+            left: menuItemPos.left
+        });
+
+        setTimeout(function() {
+            menuItem.toggleClass('subnav-open');
+            submenuWrapper.toggle();
+        });
+    });
+
+    jQuery("#secondary-nav-icon-tray .topnav-menu.topnav-button.has-topnav-content span.navrefs").click(function() {
+        var menuItem = jQuery(this).parent();
+        var submenuWrapper = jQuery('> .topnav-menu-content', menuItem);
+
+        setTimeout(function() {
+            menuItem.toggleClass('topnav-open');
+            submenuWrapper.toggle();
+        });
+    });
+
+    var hamburgerMenu = document.querySelector('#supernav_logo');
+    var topNavHiddenContent = document.querySelector('.topnav-menu-content');
+    var topNavContainer = document.querySelector('#topnav-container');
+
+    document.querySelector('.supernav-hamburger-menu').addEventListener('click', function(event) {
+        topNavHiddenContent.classList.toggle('visible');
+        topNavHiddenContent.classList.remove('nav-edit');
+        topNavContainer.classList.toggle('menu-open');
+        document.body.classList.toggle('no-scroll');
+    });
+
+    jQuery('.dropdown-menu-button').click(function() {
+        jQuery(this).parent().toggleClass('open');
+    });
+
+    window.addEventListener('click', function(event) {
+        var setupView = document.getElementById('interface-toggle-setup');
+        var toggleOpenButton = document.getElementById('keap-toggle-open-dialog-button');
+
+        if (setupView && toggleOpenButton) {
+            if (!toggleOpenButton.contains(event.target)) {
+                if (!setupView.contains(event.target)){
+                    showInterfaceToggleSetup(false);
+                }
+            } else {
+                showInterfaceToggleSetup(true);
+            }
+        }
+
+        var isHiddenTopNavVisible = topNavHiddenContent.classList.contains('visible') || topNavHiddenContent.classList.contains('nav-edit');
+        var clickedMobileHeader = topNavContainer.contains(event.target) && window.innerWidth < 1000;
+
+        if (isHiddenTopNavVisible && !topNavHiddenContent.contains(event.target) && !hamburgerMenu.contains(event.target) && !clickedMobileHeader) {
+            topNavHiddenContent.classList.remove('visible');
+            topNavHiddenContent.classList.remove('nav-edit');
+            topNavContainer.classList.remove('menu-open');
+            document.body.classList.remove('no-scroll');
+        }
+
+        var openSubNav = document.querySelector('.has-subnav-menu.subnav-open');
+
+        if (openSubNav && !openSubNav.contains(event.target)) {
+            jQuery('.subnav-menu-content').hide();
+            jQuery('.has-subnav-menu.subnav-open').removeClass('subnav-open');
+        }
+
+        var openTopNav = document.querySelector('.has-topnav-content.topnav-open');
+
+        if (openTopNav && !openTopNav.contains(event.target)) {
+            jQuery('.secondary-nav-icon-tray .topnav-menu-content').hide();
+            jQuery('.has-topnav-content.topnav-open').removeClass('topnav-open');
+        }
+
+        var openDropdownMenuButton = document.querySelector('.dropdown-menu-container.open .dropdown-menu-button');
+
+        if (openDropdownMenuButton && !openDropdownMenuButton.contains(event.target)) {
+            jQuery('.dropdown-menu-container.open').removeClass('open');
+        }
+    });
+</script>
+
+<iron-a11y-announcer><div class="style-scope iron-a11y-announcer" aria-live="polite"></div></iron-a11y-announcer><div class="_pendo-launcher_ _pendo-launcher-bottom-right_" style="width: 320px; height: 500px;"><div class="_pendo-guide-container_ _pendo-guide-container-bottom_ bottom" style="top: 15px; left: 15px; width: 290px; height: 470px;"><div class=" _pendo-guide-content_"><div class="_pendo-launcher-content_" pendo-style="border-color:#36A635" style="border-color: rgb(54, 166, 53);">
+    <div class="_pendo-launcher-header_">
+        <div class="_pendo-launcher-title_" pendo-style="color:#36A635" style="color: rgb(54, 166, 53);">Max Classic</div>
+        
+    </div>
+
+    
+
+    <div class="_pendo-launcher-body_">
+        
+
+        
+        <div class="_pendo-launcher-accordion_ _pendo-launcher-whatsnew_ _pendo-launcher-whatsnew-empty_">
+            <button>
+                What's New
+                <span class=" _pendo-launcher-whatsnew-count_" style="white-space: pre-wrap;">0</span>
+            </button>
+            <div class="_pendo-launcher-guide-listing_">
+                
+                <!-- What to display when there are no "what's new" guides -->
+                <div class="_pendo-launcher-item_ empty">
+                    <div class="_pendo-guide-whatsnew_">There are no new announcements</div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </div>
+</div>
+</div><button id="_pendo-close-guide_" aria-label="close" class=" _pendo-close-guide_" style="white-space: pre-wrap;">×</button></div><div class="_pendo-guide-arrow_ _pendo-guide-arrow-bottom_ bottom" style="border-top-width: 15px; border-right-width: 15px; border-left-width: 15px; top: 484px; left: 265px;"></div><div class="_pendo-guide-arrow-border_ _pendo-guide-arrow-border-bottom_ bottom" style="border-top-width: 15px; border-right-width: 15px; border-left-width: 15px; top: 485px; left: 265px;"></div></div><div class="_pendo-launcher-badge_ _pendo-launcher-badge-bottom-right_" style=""><img class="" src="./feb 2 news 2025_files/launcherBadge_custom_f5d09dfb9dca157b1634855fa2540dde"><div class=" _pendo-launcher-whatsnew-count_" style="display: none;">0</div></div><div id="lightbox-container" class=""><div id="lightbox" style="height:auto;width:750px; border-radius:0px; min-width:undefined"><div class="hd">HTML Preview</div><div id="lightbox-content" class="bd" style="padding:10px"><div class="lightbox-error-message hidden" id="lightboxErrorMessage" style="margin-top: 16px; margin-left: 32px"></div><div id="lightbox-modal-body"><style type="text/css">
+    #previewFrame {
+        border: 1px solid #CCCCCC;
+    }
+</style>
+
+<iframe id="previewFrame" width="725" height="450" src="./feb 2 news 2025_files/renderPreviewForMailBatch.html"></iframe>
+    </div></div><span class="container-close"></span></div></div></body></html>
